@@ -1,13 +1,204 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>gridism-website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gridism - Digital Creative Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fixed Logo - Left Side -->
+    <div class="fixed-logo" id="fixedLogo">
+        <svg class="logo-icon" viewBox="0 0 40 40">
+            <rect x="2" y="2" width="14" height="14" fill="none" stroke="white" stroke-width="1"/>
+            <rect x="18" y="2" width="14" height="14" fill="none" stroke="white" stroke-width="1"/>
+            <rect x="2" y="18" width="14" height="14" fill="none" stroke="white" stroke-width="1"/>
+            <rect x="18" y="18" width="14" height="14" fill="none" stroke="white" stroke-width="1"/>
+        </svg>
+    </div>
+
+    <!-- Fixed Time/Coordinate - Right Side -->
+    <div class="fixed-coordinate" id="fixedCoordinate">
+        <span id="time">20:36</span> | <span id="coordinate">6°10′06″ S, 106°45′32″ E</span>
+    </div>
+
+    <!-- Navigation Bar with Glass Effect (Hides on scroll down, shows on scroll up) -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">GRIDISM</div>
+            <div class="nav-center">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#works" class="nav-link">Works</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#connect" class="nav-link">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <!-- Grid Lines -->
+            <div class="grid-lines">
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+                <div class="grid-line"></div>
+            </div>
+            
+            <!-- Chess Piece Icon -->
+            <div class="chess-icon">
+                <svg viewBox="0 0 100 200" class="chess-piece">
+                    <!-- King piece silhouette -->
+                    <path d="M50 20 L55 15 L55 5 L45 5 L45 15 Z" fill="white"/>
+                    <ellipse cx="50" cy="30" rx="8" ry="5" fill="white"/>
+                    <path d="M45 35 L42 120 L58 120 L55 35 Z" fill="white"/>
+                    <ellipse cx="50" cy="120" rx="20" ry="8" fill="white"/>
+                    <rect x="30" y="125" width="40" height="15" fill="white"/>
+                    <rect x="25" y="140" width="50" height="10" fill="white"/>
+                </svg>
+            </div>
+
+            <!-- Hero Title -->
+            <div class="hero-title">
+                <h1>A NEW ORDER<br>OF DESIGN</h1>
+            </div>
+
+            <!-- Rotating Text Labels -->
+            <div class="label-left-top">Human Centric Approach</div>
+            <div class="label-left-bottom">Consistency Loyalty</div>
+            <div class="label-right-top">Structure with Purpose</div>
+            <div class="label-right-bottom">Creativity within Order</div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section class="core-services">
+        <div class="container">
+            <!-- GRIDISM Logo -->
+            <div class="section-logo">GRIDISM</div>
+            
+            <!-- Chess Piece Accent -->
+            <div class="chess-accent">
+                <svg viewBox="0 0 100 200" class="chess-piece-small">
+                    <path d="M50 20 L55 15 L55 5 L45 5 L45 15 Z" fill="white"/>
+                    <ellipse cx="50" cy="30" rx="8" ry="5" fill="white"/>
+                    <path d="M45 35 L42 120 L58 120 L55 35 Z" fill="white"/>
+                    <ellipse cx="50" cy="120" rx="20" ry="8" fill="white"/>
+                </svg>
+            </div>
+
+            <h2 class="section-title">OUR CORE<br>SERVICE</h2>
+            
+            <div class="services-list">
+                <div class="service-item">
+                    <div class="service-label">OPTIMIZATION IMPROVE</div>
+                    <div class="service-image">
+                        <!-- Queen chess piece -->
+                        <svg viewBox="0 0 200 300" class="chess-queen">
+                            <circle cx="100" cy="40" r="15" fill="white"/>
+                            <path d="M90 50 L85 180 L115 180 L110 50 Z" fill="white"/>
+                            <ellipse cx="100" cy="180" rx="35" ry="15" fill="white"/>
+                            <rect x="70" y="195" width="60" height="25" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <!-- King chess piece -->
+                        <svg viewBox="0 0 200 300" class="chess-king">
+                            <path d="M100 30 L110 20 L110 5 L90 5 L90 20 Z" fill="white"/>
+                            <ellipse cx="100" cy="50" rx="15" ry="10" fill="white"/>
+                            <path d="M92 60 L88 180 L112 180 L108 60 Z" fill="white"/>
+                            <ellipse cx="100" cy="180" rx="40" ry="15" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="service-label">DIGITAL TRANSFORMATION CONSULTING</div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-label">CUSTOM SOFTWARE<br>& WEB DEVELOPMENT</div>
+                    <div class="service-image">
+                        <!-- Bishop chess piece -->
+                        <svg viewBox="0 0 200 300" class="chess-bishop">
+                            <circle cx="100" cy="30" r="12" fill="white"/>
+                            <path d="M92 45 L88 180 L112 180 L108 45 Z" fill="white"/>
+                            <ellipse cx="100" cy="180" rx="35" ry="15" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-image">
+                        <!-- King chess piece -->
+                        <svg viewBox="0 0 200 300" class="chess-king">
+                            <path d="M100 30 L110 20 L110 5 L90 5 L90 20 Z" fill="white"/>
+                            <ellipse cx="100" cy="50" rx="15" ry="10" fill="white"/>
+                            <path d="M92 60 L88 180 L112 180 L108 60 Z" fill="white"/>
+                            <ellipse cx="100" cy="180" rx="40" ry="15" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="service-label">BRANDING</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="key-features">
+        <div class="container">
+            <h2 class="section-title">KEY FEATURES<br>THAT DEFINE<br>US</h2>
+            
+            <div class="features-content">
+                <!-- Chess pieces visual -->
+                <div class="features-visual">
+                    <svg viewBox="0 0 400 400" class="chess-podium">
+                        <!-- Three chess pieces on podiums -->
+                        <rect x="50" y="250" width="80" height="100" fill="white" opacity="0.9"/>
+                        <rect x="160" y="200" width="80" height="150" fill="white"/>
+                        <rect x="270" y="220" width="80" height="130" fill="white" opacity="0.8"/>
+                    </svg>
+                </div>
+
+                <div class="features-cards">
+                    <div class="feature-card">
+                        <h3>Design as Our Foundation</h3>
+                        <p>At Gridism, we transform ideas into visual reality, brick by brick. We believe design is a timeless craft, built on precision and purpose.</p>
+                        <p>Through human-centered aesthetics, we ensure designs that are both clarity, usability, and creativity.  Every brand that drives lasting digital impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Projects Section -->
+    <section class="portfolio-section">
+        <div class="project-card">
+            <div class="project-image"></div>
+            <div class="project-info">
+                <h3>Prosperity Through Innovation</h3>
+                <p>At Gridism, we transform innovative ideas into powerful growth. </p>
+                <p>At Gridism, we transform your vision into digital solutions through collaboration and innovation, orchestrating cutting-edge design and technology to drive sustainable long-term value.</p>
+            </div>
+        </div>
+
+        <div class="project-card reverse">
+            <div class="project-info">
+                <h3>Legacy in Every Line</h3>
+                <p>Legacy is nothing more than the sum of every decision and consistency. </p>
+                <p>At Gridism, we understand that meaningful work only happens through deep technology while preserving identity and vision.</p>
+            </div>
+            <div class="project-image"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">WHAT CLIENT'S<br>SAY? </h2>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
