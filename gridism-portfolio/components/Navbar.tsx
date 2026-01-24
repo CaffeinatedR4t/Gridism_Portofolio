@@ -1,50 +1,46 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const Navbar = () => {
-  const pathname = usePathname();
-
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/works", label: "Works" },
-    { href: "/about", label: "About" },
-    { href: "/connect", label: "Connect" },
+    { href: "/", label: "Home", italic: false },
+    { href: "/works", label: "Works", italic: false },
+    { href: "/about", label: "About", italic: false },
+    { href: "/connect", label: "Connect", italic: true },
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 px-8 py-6">
-      <nav className="max-w-[1920px] mx-auto flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-40">
+      <nav className="w-full max-w-[1440px] mx-auto relative h-[108px] px-[70px]">
         {/* Logo */}
-        <Link href="/" className="relative z-50">
+        <Link 
+          href="/" 
+          className="absolute top-[57px] left-[70px]"
+        >
           <Image
-            src="/images/gridism-logo. svg"
+            src="/images/gridism-logo.svg"
             alt="Gridism"
-            width={120}
-            height={32}
-            className="brightness-0 invert" 
+            width={44}
+            height={44}
           />
         </Link>
 
         {/* Navigation Links */}
-        <ul className="flex items-center gap-10">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className={`text-sm font-light tracking-wide transition-colors hover:text-white ${
-                  pathname === link. href
-                    ? "text-white"
-                    : "text-neutral-400"
-                }`}
-              >
-                {link. label}
-              </Link>
-            </li>
+        <div className="absolute top-[60px] right-[70px] flex items-center">
+          {navLinks.map((link, index) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`text-[20px] leading-[24px] text-white transition-opacity hover:opacity-80 ${
+                link.italic ? "italic" : ""
+              } ${index !== 0 ? "ml-[84px]" : ""}`}
+            >
+              {link.label}
+            </Link>
           ))}
-        </ul>
+        </div>
       </nav>
     </header>
   );

@@ -8,7 +8,7 @@ const FloatingLogo = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window. scrollY);
+      setScrollY(window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -17,18 +17,20 @@ const FloatingLogo = () => {
 
   return (
     <div
-      className="fixed right-[5%] top-[20%] z-30 pointer-events-none"
+      className="fixed z-30 pointer-events-none left-1/2"
       style={{
-        transform: `translateY(${scrollY * 0.3}px) rotate(15deg)`,
+        top: "373px",
+        transform: `translateX(-50%) translateY(${scrollY * 0.3}px)`,
       }}
     >
       <Image
         src="/images/gridism-logo-tilted.svg"
         alt=""
-        width={500}
-        height={120}
-        className="opacity-20 select-none"
+        width={866}
+        height={249}
+        className="select-none"
         aria-hidden="true"
+        style={{ mixBlendMode: "difference" }}
       />
     </div>
   );
