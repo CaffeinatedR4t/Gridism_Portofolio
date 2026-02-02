@@ -1,0 +1,3863 @@
+/* Home */
+
+position: relative;
+width: 1440px;
+height: 18784px;
+
+background: #FFFFFF;
+
+
+/* gfgfgfgfgbfgb 1 */
+
+position: absolute;
+width: 1949px;
+height: 2922px;
+left: -255px;
+top: 2608px;
+
+
+
+/* Illustration37grg 1 */
+
+position: absolute;
+width: 1440px;
+height: 2293px;
+left: -1px;
+top: -173px;
+
+background: url(Illustration37grg.png);
+
+
+/* 97c13db9-a8bb-49c3-a290-6c7c637f23fa_Nero_AI_Image_Upscaler_Photo_Facee 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1440px;
+height: 1935px;
+left: 0px;
+top: 0px;
+
+background: url(97c13db9-a8bb-49c3-a290-6c7c637f23fa_Nero_AI_Image_Upscaler_Photo_Facee);
+
+
+/* Illustration37f 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1588px;
+height: 2530px;
+left: -75px;
+top: -246px;
+
+background: url(Illustration37f);
+
+
+/* wallpaper gridisimrt 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1440px;
+height: 2037px;
+left: 0px;
+top: 0px;
+
+background: url(wallpaper gridisimrt);
+
+
+/* wallpaper gridisimfe 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1550px;
+height: 2192px;
+left: -55px;
+top: 101px;
+
+background: url(wallpaper gridisimfe);
+
+
+/* wallpaper gridisimCDS 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1440px;
+height: 2036px;
+left: 0px;
+top: 0px;
+
+background: url(wallpaper gridisimCDS);
+
+
+/* wallpaper gridisimDDED 1 */
+
+position: absolute;
+visibility: hidden;
+width: 1330px;
+height: 1882px;
+left: 55px;
+top: 155px;
+
+background: url(wallpaper gridisimDDED);
+
+
+/* Works */
+
+position: absolute;
+width: 61px;
+height: 24px;
+left: 944px;
+top: 60px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+border: 0.2px solid #FFFFFF;
+
+
+/* 20:36 | 6°10′06″ S, 106°45′32″ E */
+
+position: absolute;
+width: 261px;
+height: 19px;
+left: 1364px;
+top: 387px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: right;
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* About */
+
+position: absolute;
+width: 61px;
+height: 24px;
+left: 1089px;
+top: 60px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+border: 0.2px solid #FFFFFF;
+
+
+/* Home */
+
+position: absolute;
+width: 59px;
+height: 24px;
+left: 801px;
+top: 60px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+border: 0.2px solid #FFFFFF;
+
+
+/* Human Centric Approach */
+
+position: absolute;
+width: 127px;
+height: 12px;
+left: 168px;
+top: 188px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Commitment to Crafting */
+
+position: absolute;
+width: 124px;
+height: 12px;
+left: 388px;
+top: 374px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Consistency Loyalty */
+
+position: absolute;
+width: 101px;
+height: 12px;
+left: 168px;
+top: 712px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Growth by Design */
+
+position: absolute;
+width: 89px;
+height: 12px;
+left: 610px;
+top: 693px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Structure with Purpose */
+
+position: absolute;
+width: 114px;
+height: 12px;
+left: 828px;
+top: 196px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Creativity within Order */
+
+position: absolute;
+width: 114px;
+height: 12px;
+left: 1048px;
+top: 917px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Digital Creative Agency */
+
+position: absolute;
+width: 118px;
+height: 12px;
+left: 1268px;
+top: 976px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Connect */
+
+position: absolute;
+width: 87px;
+height: 24px;
+left: 1282px;
+top: 60px;
+
+font-family: 'Silka';
+font-style: italic;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+border: 0.2px solid #FFFFFF;
+
+
+/* Group 13 */
+
+position: absolute;
+width: 397px;
+height: 549.61px;
+left: 61px;
+top: 9641px;
+
+
+
+/* Group 10 */
+
+position: absolute;
+width: 397px;
+height: 549.61px;
+left: 61px;
+top: 9641px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 397px;
+height: 549.61px;
+left: 61px;
+top: 9641px;
+
+background: #FFFFFF;
+border-radius: 11px;
+
+
+/* Creating intuitive and engaging digital interfaces */
+
+position: absolute;
+width: 332.49px;
+height: 37.47px;
+left: 99.71px;
+top: 9780px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 320px;
+height: 287px;
+left: 100px;
+top: 9860px;
+
+background: #373737;
+
+
+/* Group 14 */
+
+position: absolute;
+width: 451px;
+height: 648px;
+left: 494px;
+top: 10233px;
+
+
+
+/* Group 12 */
+
+position: absolute;
+width: 451px;
+height: 648px;
+left: 494px;
+top: 10233px;
+
+
+
+/* Group 9 */
+
+position: absolute;
+width: 451px;
+height: 648px;
+left: 494px;
+top: 10233px;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 451px;
+height: 648px;
+left: 494px;
+top: 10233px;
+
+background: #FFFFFF;
+border-radius: 11px;
+
+
+/* Creating intuitive and engaging digital interfaces */
+
+position: absolute;
+width: 377.71px;
+height: 42.27px;
+left: 544.12px;
+top: 10574.17px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Rectangle 5 */
+
+position: absolute;
+width: 358px;
+height: 190px;
+left: 544px;
+top: 10273px;
+
+background: #373737;
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 358px;
+height: 190px;
+left: 544px;
+top: 10649px;
+
+background: #373737;
+
+
+/* Group 11 */
+
+position: absolute;
+width: 352.3px;
+height: 606px;
+left: 1016px;
+top: 9825px;
+
+
+
+/* Group 8 */
+
+position: absolute;
+width: 352.3px;
+height: 606px;
+left: 1016px;
+top: 9825px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 352.3px;
+height: 606px;
+left: 1016px;
+top: 9825px;
+
+background: #FFFFFF;
+border-radius: 11px;
+
+
+/* Guiding businesses through technological innovation */
+
+position: absolute;
+width: 295.05px;
+height: 41.32px;
+left: 1051.23px;
+top: 10346px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Rectangle 7 */
+
+position: absolute;
+width: 284px;
+height: 325.26px;
+left: 1051.3px;
+top: 9859.22px;
+
+background: #373737;
+
+
+/* Vector */
+
+position: absolute;
+left: 25.49%;
+right: 25.49%;
+top: 3.79%;
+bottom: 87.79%;
+
+background: #FFFFFF;
+mix-blend-mode: difference;
+box-shadow: 5px 4px 25.2px rgba(0, 0, 0, 0.25);
+
+
+/* Grit Builds Precision */
+
+position: absolute;
+width: 99px;
+height: 12px;
+left: 724px;
+top: 1160px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+transform: rotate(90deg);
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 1450px;
+height: 11545px;
+left: -1px;
+top: 2293px;
+
+background: linear-gradient(180deg, #000000 0%, #050505 74.52%, #222222 100%);
+
+
+/* aete@2x 1 */
+
+position: absolute;
+width: 1305px;
+height: 1014px;
+left: 70px;
+top: 7835.81px;
+
+background: url(aete@2x);
+
+
+/* OUR CORE SERVICE */
+
+position: absolute;
+width: 770px;
+height: 305px;
+left: 510px;
+top: 2855px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 115px;
+
+color: #FFFFFF;
+
+border: 1px solid #FFFFFF;
+
+
+/* Rectangle 20 */
+
+position: absolute;
+width: 489px;
+height: 138px;
+left: 600px;
+top: 503px;
+
+background: linear-gradient(90deg, #000000 0%, rgba(174, 174, 174, 0) 100%);
+background-blend-mode: overlay;
+
+
+/* DESIGN */
+
+position: absolute;
+width: 469px;
+height: 144px;
+left: 612px;
+top: 497px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 120px;
+line-height: 144px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+
+border: 1px solid #FFFFFF;
+
+
+/* Frame 4 */
+
+position: absolute;
+width: 924px;
+height: 154px;
+left: 674px;
+top: 15103px;
+
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 950px;
+height: 154px;
+left: 0px;
+top: 0px;
+
+
+
+/* Group 44 */
+
+position: absolute;
+width: 1300px;
+height: 303px;
+left: 60px;
+top: 15204px;
+
+
+
+/* Frame 3 */
+
+position: absolute;
+width: 924px;
+height: 154px;
+left: 60px;
+top: 15204px;
+
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 950px;
+height: 154px;
+left: 0px;
+top: 0px;
+
+
+
+/* LEGACY AS */
+
+position: absolute;
+width: 1300px;
+height: 308px;
+left: 0px;
+top: 0px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 154px;
+
+color: #000000;
+
+border: 1px solid #000000;
+
+
+/* Vector 6 */
+
+position: absolute;
+width: 574px;
+height: 81px;
+left: 298px;
+top: 15389px;
+
+border: 6px solid #000000;
+
+
+/* VALUE */
+
+position: absolute;
+width: 428px;
+height: 154px;
+left: 932px;
+top: 15353px;
+
+font-family: 'Silka';
+font-style: italic;
+font-weight: 400;
+font-size: 128px;
+line-height: 154px;
+/* identical to box height */
+text-align: right;
+
+color: #000000;
+
+border: 1px solid #000000;
+
+
+/* Web Development & Branding Agency */
+
+position: absolute;
+width: 428px;
+height: 58px;
+left: 929px;
+top: 17039px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* @2025 */
+
+position: absolute;
+width: 116px;
+height: 19px;
+left: 68px;
+top: 17604px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #000000;
+
+
+
+/* Instagram */
+
+position: absolute;
+width: 211px;
+height: 19px;
+left: 489px;
+top: 17604px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* LinkedIn */
+
+position: absolute;
+width: 211px;
+height: 19px;
+left: 697px;
+top: 17604px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Legals */
+
+position: absolute;
+width: 211px;
+height: 19px;
+left: 1172px;
+top: 17604px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Union */
+
+position: absolute;
+width: 278.85px;
+height: 420.54px;
+left: 70px;
+top: 8342.7px;
+
+background: #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 278.85px;
+height: 420.54px;
+left: 70px;
+top: 8342.7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 25.38%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 9.22%;
+top: 80.32%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Mask group */
+
+position: absolute;
+width: 1304px;
+height: 1010px;
+left: -294px;
+top: 15585px;
+
+
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 1304px;
+height: 1010px;
+left: -294px;
+top: 15585px;
+
+background: #D9D9D9;
+
+
+/* pawel-czerwinski--6BOpqgK9QA-unsplash (1) 1 */
+
+position: absolute;
+width: 1182.89px;
+height: 1774.13px;
+left: -149.95px;
+top: 15091.88px;
+
+background: url(pawel-czerwinski--6BOpqgK9QA-unsplash (1));
+
+
+/* Vector */
+
+position: absolute;
+width: 865.98px;
+height: 248.93px;
+left: -1523px;
+top: 889px;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+width: 865.98px;
+height: 248.93px;
+left: calc(50% - 865.98px/2 - 0.01px);
+top: 373px;
+
+background: #FFFFFF;
+
+
+/* Group 8 */
+
+position: absolute;
+width: 44.2px;
+height: 44.18px;
+left: 70px;
+top: 56.86px;
+
+transform: rotate(-0.5deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.86%;
+right: 94.38%;
+top: 0.3%;
+bottom: 99.67%;
+
+background: #FFFFFF;
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 6.37%;
+right: 92.07%;
+top: 0.3%;
+bottom: 99.67%;
+
+background: #FFFFFF;
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.88%;
+right: 94.58%;
+top: 0.5%;
+bottom: 99.47%;
+
+background: #FFFFFF;
+transform: matrix(-0.01, -1, 1, -0.01, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 4.87%;
+right: 93.15%;
+top: 0.41%;
+bottom: 99.57%;
+
+background: #FFFFFF;
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 7.59%;
+right: 90.68%;
+top: 0.4%;
+bottom: 99.57%;
+
+background: #FFFFFF;
+transform: matrix(0.01, 1, -1, 0.01, 0, 0);
+
+
+/* Vector */
+
+position: absolute;
+left: 6.1%;
+right: 93.14%;
+top: 0.51%;
+bottom: 99.46%;
+
+background: #FFFFFF;
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Mask group */
+
+position: absolute;
+width: 1289px;
+height: 1010px;
+left: 1099px;
+top: 15585px;
+
+
+
+/* Rectangle 24 */
+
+position: absolute;
+width: 1289px;
+height: 1010px;
+left: 1099px;
+top: 15585px;
+
+background: #D9D9D9;
+
+
+/* shawn-day-lh6RvqnLDLk-unsplash 1 */
+
+position: absolute;
+width: 2381px;
+height: 1340px;
+left: 1027px;
+top: 15516px;
+
+background: url(shawn-day-lh6RvqnLDLk-unsplash);
+
+
+/* Frame 2 */
+
+position: absolute;
+width: 924px;
+height: 154px;
+left: 55px;
+top: 11415px;
+
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 950px;
+height: 154px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 2 */
+
+position: absolute;
+width: 1449px;
+height: 1811px;
+left: 0px;
+top: 2293px;
+
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 55px;
+height: 121px;
+left: 693px;
+top: 796px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0.83%;
+right: 0.8%;
+top: 0.38%;
+bottom: 0.37%;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 55px;
+height: 121px;
+left: 693px;
+top: 2672px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0.83%;
+right: 0.8%;
+top: 0.38%;
+bottom: 0.37%;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 55px;
+height: 121px;
+left: 86px;
+top: 3192px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0.83%;
+right: 0.8%;
+top: 0.38%;
+bottom: 0.37%;
+
+background: #FFFFFF;
+border: 2px solid #FFFFFF;
+
+
+/* Vector 20 */
+
+position: absolute;
+width: 0px;
+height: 2293px;
+left: 160px;
+top: 0px;
+
+mix-blend-mode: overlay;
+border: 1px solid #FFFFFF;
+
+
+/* Vector 21 */
+
+position: absolute;
+width: 0px;
+height: 2293px;
+left: 380px;
+top: 0px;
+
+mix-blend-mode: overlay;
+border: 1px solid #FFFFFF;
+
+
+/* Vector 22 */
+
+position: absolute;
+width: 0px;
+height: 2293px;
+left: 600px;
+top: 0px;
+
+mix-blend-mode: overlay;
+border: 1px solid #FFFFFF;
+
+
+/* Vector 23 */
+
+position: absolute;
+width: 0px;
+height: 2293px;
+left: 820px;
+top: 0px;
+
+mix-blend-mode: overlay;
+border: 1px solid #FFFFFF;
+
+
+/* Vector 24 */
+
+position: absolute;
+width: 0px;
+height: 2293px;
+left: 1040px;
+top: 0px;
+
+mix-blend-mode: overlay;
+border: 1px solid #FFFFFF;
+
+
+/* Vector 25 */
+
+position: absolute;
+width: 0px;
+height: 2293px;
+left: 1260px;
+top: 0px;
+
+mix-blend-mode: overlay;
+border: 1px solid #FFFFFF;
+
+
+/* Union */
+
+position: absolute;
+width: 1300px;
+height: 104.73px;
+left: 70px;
+top: 2393px;
+
+background: linear-gradient(180deg, #FFFFFF 5.17%, #000000 94.38%);
+
+
+/* Layer_1 */
+
+position: absolute;
+width: 1299.93px;
+height: 104.72px;
+left: 70px;
+top: 2393px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 29.46%;
+right: 63.77%;
+top: 10.7%;
+bottom: 9.08%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 43%;
+right: 52.38%;
+top: 11.65%;
+bottom: 10.04%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 54.31%;
+right: 44.92%;
+top: 11.65%;
+bottom: 10.04%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 62.31%;
+right: 32.38%;
+top: 11.65%;
+bottom: 10.04%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 74.39%;
+right: 24.84%;
+top: 11.65%;
+bottom: 10.04%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 81.85%;
+right: 13.46%;
+top: 10.7%;
+bottom: 9.08%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 93.31%;
+right: -0.01%;
+top: 11.65%;
+bottom: 10.04%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 97.94%;
+top: 0%;
+bottom: 88.55%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.09%;
+right: 91.7%;
+top: 0%;
+bottom: 88.67%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 98.58%;
+top: 82.32%;
+bottom: 2.13%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 94.65%;
+top: 43.48%;
+bottom: 45.08%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.34%;
+right: 88.1%;
+top: 43.48%;
+bottom: 44.59%;
+
+background: #FFFFFF;
+transform: rotate(90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.28%;
+right: 94.65%;
+top: 88.57%;
+bottom: -0.02%;
+
+background: #FFFFFF;
+
+
+/* dreamina-2025-11-16-2521-Minimalist editorial illustration featur...d 2 */
+
+position: absolute;
+width: 1313px;
+height: 731px;
+left: 70px;
+top: 3540px;
+
+background: url(dreamina-2025-11-16-2521-Minimalist editorial illustration featur...d);
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 647px;
+height: 867px;
+left: -192px;
+top: 2293px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 45.37%;
+right: 42.46%;
+top: 41.69%;
+bottom: 53.14%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 22.2%;
+right: 32.96%;
+top: 6.6%;
+bottom: 63.94%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.72%;
+right: 42.02%;
+top: -0.01%;
+bottom: 89.14%;
+
+background: linear-gradient(77.27deg, #FFFFFF 6.74%, #000000 107.88%);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 49.52%;
+top: 0%;
+bottom: 51.69%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 82.14%;
+right: 0%;
+top: 0%;
+bottom: 70.24%;
+
+background: linear-gradient(6.7deg, #FFFFFF 9.7%, #000000 100.96%);
+
+
+/* Vector */
+
+position: absolute;
+left: 56.42%;
+right: 12%;
+top: 0%;
+bottom: 58.38%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 46.42%;
+right: 3.28%;
+top: 29.75%;
+bottom: 0.61%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 45.32%;
+right: 2.46%;
+top: 29.14%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 647px;
+height: 867px;
+left: -192px;
+top: 2293px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 45.37%;
+right: 42.46%;
+top: 41.69%;
+bottom: 53.14%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 22.2%;
+right: 32.96%;
+top: 6.6%;
+bottom: 63.94%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.72%;
+right: 42.02%;
+top: -0.01%;
+bottom: 89.14%;
+
+background: linear-gradient(77.27deg, #FFFFFF 6.74%, #000000 107.88%);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 49.52%;
+top: 0%;
+bottom: 51.69%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 82.14%;
+right: 0%;
+top: 0%;
+bottom: 70.24%;
+
+background: linear-gradient(6.7deg, #FFFFFF 9.7%, #000000 100.96%);
+
+
+/* Vector */
+
+position: absolute;
+left: 56.42%;
+right: 12%;
+top: 0%;
+bottom: 58.38%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 46.42%;
+right: 3.28%;
+top: 29.75%;
+bottom: 0.61%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 45.32%;
+right: 2.46%;
+top: 29.14%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Group 48 */
+
+position: absolute;
+width: 1313px;
+height: 816px;
+left: 70px;
+top: 3912px;
+
+
+
+/* Mask group */
+
+position: absolute;
+width: 1313px;
+height: 640px;
+left: 70px;
+top: 4088px;
+
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 1313px;
+height: 640px;
+left: 70px;
+top: 4088px;
+
+background: #D9D9D9;
+
+
+/* justin-peralta-qRkImTcLVZU-unsplash 1 */
+
+position: absolute;
+width: 1490.63px;
+height: 2235.67px;
+left: -22.98px;
+top: 3482.67px;
+
+background: url(justin-peralta-qRkImTcLVZU-unsplash);
+
+
+/* Group 38 */
+
+position: absolute;
+width: 1312.87px;
+height: 205.38px;
+left: 68.99px;
+top: 4081px;
+
+transform: matrix(-1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 1312.87px;
+height: 205.38px;
+left: 68.99px;
+top: 4081px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+transform: matrix(-1, 0, 0, -1, 0, 0);
+
+
+/* Rectangle 35 */
+
+position: absolute;
+width: 927.18px;
+height: 176px;
+left: 364.92px;
+top: 3912px;
+
+background: #FFFFFF;
+
+
+/* DIGITAL TRANSFORMATION CONSULTING */
+
+position: absolute;
+width: 927px;
+height: 48px;
+left: 365px;
+top: 3976px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* dreamina-2025-11-16-2521-Minimalist editorial illustration featur... 1 */
+
+position: absolute;
+width: 1313px;
+height: 1155px;
+left: 70px;
+top: 4088px;
+
+background: url(dreamina-2025-11-16-2521-Minimalist editorial illustration featur...);
+
+
+/* Group 47 */
+
+position: absolute;
+width: 827px;
+height: 109px;
+left: 160px;
+top: 3435px;
+
+
+
+/* Group 38 */
+
+position: absolute;
+visibility: hidden;
+width: 1299.87px;
+height: 424px;
+left: 70px;
+top: 3540.03px;
+
+transform: rotate(179.84deg);
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 1299.87px;
+height: 424px;
+left: 70px;
+top: 3540.03px;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+transform: rotate(179.84deg);
+
+
+/* Rectangle 34 */
+
+position: absolute;
+width: 827px;
+height: 109px;
+left: 160px;
+top: 3435px;
+
+background: #FFFFFF;
+
+
+/* OPTIMIZATION IMPROVE */
+
+position: absolute;
+width: 827px;
+height: 48px;
+left: 160px;
+top: 3466px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Group 49 */
+
+position: absolute;
+width: 1316px;
+height: 1272px;
+left: 70px;
+top: 4498px;
+
+
+
+/* Mask group */
+
+position: absolute;
+width: 1302.97px;
+height: 600px;
+left: 70px;
+top: 4690px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 1302.97px;
+height: 600px;
+left: 70px;
+top: 4690px;
+
+background: #D9D9D9;
+
+
+/* andrew-petrischev-BJfaOzsbPgQ-unsplash 1 */
+
+position: absolute;
+width: 1392.71px;
+height: 1148.99px;
+left: 25.13px;
+top: 4434.26px;
+
+background: url(andrew-petrischev-BJfaOzsbPgQ-unsplash);
+
+
+/* dreamina-2025-11-16-2521-Minimalist editorial illustration featur...cdczdv 1 */
+
+position: absolute;
+width: 1314px;
+height: 1080px;
+left: 72px;
+top: 4690px;
+
+background: url(dreamina-2025-11-16-2521-Minimalist editorial illustration featur...cdczdv);
+
+
+/* Rectangle 36 */
+
+position: absolute;
+width: 732.67px;
+height: 192px;
+left: 160.21px;
+top: 4498px;
+
+background: #FFFFFF;
+
+
+/* CUSTOM SOFTWARE & WEB DEVELOPMENT */
+
+position: absolute;
+width: 733px;
+height: 96px;
+left: 160px;
+top: 4546px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* dreamina-2025-11-16-2521-Minimalist editorial illustration featur...j 1 */
+
+position: absolute;
+width: 1313px;
+height: 1100px;
+left: 70px;
+top: 4691px;
+
+background: url(dreamina-2025-11-16-2521-Minimalist editorial illustration featur...j);
+
+
+/* Group 50 */
+
+position: absolute;
+width: 1319px;
+height: 947px;
+left: 70px;
+top: 5191px;
+
+
+
+/* Mask group */
+
+position: absolute;
+width: 1319px;
+height: 848px;
+left: 70px;
+top: 5290px;
+
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+
+/* Rectangle 9 */
+
+position: absolute;
+width: 1319px;
+height: 848px;
+left: 70px;
+top: 5290px;
+
+background: #D9D9D9;
+
+
+/* andrew-petrischev-BJfaOzsbPgQ-unsplash 1 */
+
+position: absolute;
+width: 1665.86px;
+height: 1374.34px;
+left: -103.43px;
+top: 5053.33px;
+
+background: url(andrew-petrischev-BJfaOzsbPgQ-unsplash);
+
+
+/* hassan-pasha-WTZZomyqaoA-unsplash 1 */
+
+position: absolute;
+width: 1558.44px;
+height: 1039.09px;
+left: -49px;
+top: 5105.24px;
+
+background: url(hassan-pasha-WTZZomyqaoA-unsplash);
+
+
+/* dreamina-2025-11-16-2521-Minimalist efe]ditorial illustration featur... 2 */
+
+position: absolute;
+width: 1309.47px;
+height: 882.38px;
+left: 73.75px;
+top: 5286.81px;
+
+background: url(dreamina-2025-11-16-2521-Minimalist efe]ditorial illustration featur...);
+
+
+/* Rectangle 37 */
+
+position: absolute;
+width: 446.43px;
+height: 99px;
+left: 161.32px;
+top: 5191px;
+
+background: #FFFFFF;
+
+
+/* BRANDING */
+
+position: absolute;
+width: 447px;
+height: 48px;
+left: 161px;
+top: 5217px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Vector 27 */
+
+position: absolute;
+left: 50.9%;
+right: 49.1%;
+top: 34.16%;
+bottom: 55.27%;
+
+border: 1px solid #FFFFFF;
+transform: rotate(0.12deg);
+
+
+/* Vector 26 */
+
+position: absolute;
+width: 1057px;
+height: 5705px;
+left: 111px;
+top: 712px;
+
+border: 1px solid #FFFFFF;
+
+
+/* Group 41 */
+
+position: absolute;
+width: 1305px;
+height: 350.96px;
+left: 70px;
+top: 8762.23px;
+
+
+
+/* Group 8 */
+
+position: absolute;
+width: 1305px;
+height: 350.96px;
+left: 70px;
+top: 8762.23px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 1305px;
+height: 350.96px;
+left: 70px;
+top: 8762.23px;
+
+background: #FFFFFF;
+
+
+/* Guiding businesses through technological innovation */
+
+position: absolute;
+width: 1092.94px;
+height: 23.93px;
+left: 200.5px;
+top: 9063.96px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* FEGGR@2x 1 */
+
+position: absolute;
+width: 1299px;
+height: 1010px;
+left: 69px;
+top: 10530px;
+
+background: url(FEGGR@2x);
+
+
+/* Group 46 */
+
+position: absolute;
+width: 1298px;
+height: 376px;
+left: 70px;
+top: 11366.25px;
+
+
+
+/* Group 8 */
+
+position: absolute;
+width: 1298px;
+height: 376px;
+left: 70px;
+top: 11366.25px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 1298px;
+height: 376px;
+left: 70px;
+top: 11366.25px;
+
+background: #FFFFFF;
+
+
+/* Guiding businesses through technological innovation */
+
+position: absolute;
+width: 1087.08px;
+height: 25.64px;
+left: 199.8px;
+top: 11689.51px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+
+/* aeteG@2x 1 */
+
+position: absolute;
+width: 1294px;
+height: 1006px;
+left: 70px;
+top: 9196px;
+
+background: url(aeteG@2x);
+
+
+/* Group 45 */
+
+position: absolute;
+width: 1294px;
+height: 376px;
+left: 70px;
+top: 10071px;
+
+
+
+/* Group 8 */
+
+position: absolute;
+width: 1294px;
+height: 376px;
+left: 70px;
+top: 10071px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 1294px;
+height: 376px;
+left: 70px;
+top: 10071px;
+
+background: #FFFFFF;
+
+
+/* Guiding businesses through technological innovation */
+
+position: absolute;
+width: 1083.72px;
+height: 25.64px;
+left: 199.4px;
+top: 10394.26px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+
+/* Vector 28 */
+
+position: absolute;
+width: 0px;
+height: 2764px;
+left: 733px;
+top: 8403px;
+
+border: 1px solid #FFFFFF;
+transform: rotate(-0.02deg);
+
+
+/* Layer_1 */
+
+position: absolute;
+width: 590.19px;
+height: 858.96px;
+left: 437px;
+top: 6904px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 52.27%;
+top: 5.71%;
+bottom: 27.05%;
+
+background: linear-gradient(0deg, #121212 0%, #212121 10%, #484848 29%, #888888 56%, #DEDEDE 88%, #FFFFFF 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 52.27%;
+top: 0%;
+bottom: 88.04%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 52.27%;
+right: 0%;
+top: 17.27%;
+bottom: 15.49%;
+
+background: linear-gradient(0deg, #141414 0%, #161616 6.73%, #191919 16.35%, #212121 27.41%, #353535 37.02%, #484848 44.23%, #888888 62.98%, #DEDEDE 88%, #FFFFFF 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 52.27%;
+right: 0%;
+top: 11.56%;
+bottom: 76.48%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.76%;
+right: 42.51%;
+top: 32.76%;
+bottom: 0%;
+
+background: linear-gradient(0deg, #141414 0%, #161616 6.73%, #191919 16.35%, #212121 27.41%, #353535 37.02%, #484848 44.23%, #888888 62.98%, #DEDEDE 88%, #FFFFFF 100%);
+
+
+/* Vector */
+
+position: absolute;
+left: 9.76%;
+right: 42.51%;
+top: 27.05%;
+bottom: 60.99%;
+
+background: #FFFFFF;
+
+
+/* Vector 29 */
+
+position: absolute;
+width: 624px;
+height: 3001px;
+left: 111px;
+top: 13958px;
+
+border: 1px solid #000000;
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 162px;
+height: 536px;
+left: 1213px;
+top: 9535px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.76%;
+right: 7%;
+top: 84.89%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.93%;
+right: 6.66%;
+top: 21.61%;
+bottom: 19.41%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 69.9%;
+
+background: #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+left: 4.86%;
+right: 80.97%;
+top: 58.3%;
+bottom: 39.49%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 70.29%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0.14%;
+top: 34.95%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* KEY FEATURES THAT DEFINE US */
+
+box-sizing: border-box;
+
+position: absolute;
+left: 24.17%;
+right: 22.64%;
+top: 34.5%;
+bottom: 63.67%;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 96px;
+line-height: 115px;
+text-align: center;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+border: 1px solid #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+left: 41.6%;
+right: 53.4%;
+top: 37.49%;
+bottom: 61.73%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 70.29%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0.14%;
+top: 34.95%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Union */
+
+position: absolute;
+width: 95.26px;
+height: 143.66px;
+left: 530px;
+top: 6816px;
+
+background: #FFFFFF;
+
+
+/* Layer_2 */
+
+position: absolute;
+width: 95.26px;
+height: 143.66px;
+left: 530px;
+top: 6816px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 25.38%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 9.22%;
+top: 80.32%;
+bottom: 0%;
+
+background: #000000;
+
+
+/* Layer_2 */
+
+position: absolute;
+left: 59.58%;
+right: 36.46%;
+top: 36.54%;
+bottom: 62.46%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.76%;
+right: 7%;
+top: 84.89%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 8.93%;
+right: 6.66%;
+top: 21.61%;
+bottom: 19.41%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 69.9%;
+
+background: #FFFFFF;
+
+
+/* Rectangle 38 */
+
+position: absolute;
+width: 1478px;
+height: 496px;
+left: -29px;
+top: 7432px;
+
+background: linear-gradient(180deg, rgba(20, 20, 20, 0) 13.94%, #171717 50.96%, rgba(23, 23, 23, 0) 100%);
+
+
+/* Rectangle 39 */
+
+position: absolute;
+width: 1440px;
+height: 1314px;
+left: 0px;
+top: 13765px;
+
+background: linear-gradient(180deg, #222222 0%, #888888 48.56%, #FFFFFF 100%);
+
+
+/* Group 53 */
+
+position: absolute;
+width: 391px;
+height: 528px;
+left: 524px;
+top: 14315px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 385px;
+height: 460px;
+left: 530px;
+top: 14315px;
+
+background: #FFFFFF;
+
+
+/* This step forms the backbone of your SEO strategy, targeting the right keyword helps drive qualified traffic to your site */
+
+position: absolute;
+width: 321px;
+height: 155px;
+left: 568px;
+top: 14688px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+
+
+/* Rectangle 40 */
+
+position: absolute;
+width: 165px;
+height: 80px;
+left: 524px;
+top: 14515px;
+
+background: #222222;
+
+
+/* Group 58 */
+
+position: absolute;
+width: 845.82px;
+height: 880px;
+left: -20px;
+top: 12369px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: -20px;
+top: 12369px;
+
+background: #FFFFFF;
+
+
+/* “What impressed us most was their speed without sacrificing quality. Communication was clear, revisions were efficient, and the final result exceeded our expectations.” */
+
+position: absolute;
+width: 507px;
+height: 155px;
+left: 226px;
+top: 12551px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Elliot Hartman */
+
+position: absolute;
+width: 507px;
+height: 37px;
+left: 289px;
+top: 12752px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Elliot Hartman */
+
+position: absolute;
+width: 507px;
+height: 37px;
+left: 150px;
+top: 13212px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Group 59 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 846px;
+top: 12369px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 846px;
+top: 12369px;
+
+background: #FFFFFF;
+
+
+/* “The visual system Gridisim delivered feels premium, modern, and highly usable. Every detail felt deliberate, from typography to layout consistency.” */
+
+position: absolute;
+width: 517px;
+height: 155px;
+left: 1082px;
+top: 12551px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Group 60 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: -123px;
+top: 12847px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: -123px;
+top: 12847px;
+
+background: #FFFFFF;
+
+
+/* “Working with Gridisim felt like working with an internal team rather than an external agency. They were collaborative, proactive, and genuinely cared about the outcome.” */
+
+position: absolute;
+width: 510px;
+height: 155px;
+left: 120px;
+top: 13035px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Group 61 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 743px;
+top: 12847px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 743px;
+top: 12847px;
+
+background: #FFFFFF;
+
+
+/* “The development team translated complex ideas into a clean, responsive website. Performance, structure, and scalability were all handled professionally.” */
+
+position: absolute;
+width: 521px;
+height: 155px;
+left: 975px;
+top: 13038px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Group 62 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: -620px;
+top: 13328px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: -620px;
+top: 13328px;
+
+background: #FFFFFF;
+
+
+/* “Gridisim didn’t just design our brand — they helped us clarify our positioning. The team understands both visuals and strategy, which made the entire process feel thoughtful and intentional.” */
+
+position: absolute;
+width: 705.21px;
+height: 155px;
+left: -572.18px;
+top: 13513px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Group 63 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 246px;
+top: 13328px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 246px;
+top: 13328px;
+
+background: #FFFFFF;
+
+
+/* “Gridisim is a studio we would confidently recommend to founders and growing teams. They combine strong creative taste with technical and business understanding.” */
+
+position: absolute;
+width: 510px;
+height: 155px;
+left: 497px;
+top: 13513px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Group 64 */
+
+position: absolute;
+width: 948.21px;
+height: 460px;
+left: 1112px;
+top: 13328px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 845.82px;
+height: 460px;
+left: 1112px;
+top: 13328px;
+
+background: #FFFFFF;
+
+
+/* “Since launching the new branding and website, our engagement and conversion rates have noticeably improved. The work wasn’t just beautiful — it delivered real results.” */
+
+position: absolute;
+width: 705.21px;
+height: 155px;
+left: 1355px;
+top: 13600px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
+
+
+
+/* Legacy in Every Line */
+
+position: absolute;
+width: 513px;
+height: 85px;
+left: 111px;
+top: 11415px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 400;
+font-size: 40px;
+line-height: 48px;
+
+color: #000000;
+
+
+
+/* Group 56 */
+
+position: absolute;
+width: 319.86px;
+height: 430px;
+left: 1063px;
+top: 14352px;
+
+
+
+/* Group 54 */
+
+position: absolute;
+width: 319.86px;
+height: 430px;
+left: 1063px;
+top: 14352px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 313.86px;
+height: 375px;
+left: 1069px;
+top: 14352px;
+
+background: #FFFFFF;
+
+
+/* We develop ethical link-buildingg strategies to grow your online reputation and improve search engine trust. */
+
+position: absolute;
+width: 255px;
+height: 155px;
+left: 1100px;
+top: 14627px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+
+
+/* Rectangle 41 */
+
+position: absolute;
+width: 131px;
+height: 66px;
+left: 1063px;
+top: 14540px;
+
+background: #222222;
+
+
+/* Step 3 */
+
+position: absolute;
+width: 108px;
+height: 29px;
+left: 1099px;
+top: 14558px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Group 55 */
+
+position: absolute;
+width: 318.86px;
+height: 423px;
+left: 65px;
+top: 14352px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 313.86px;
+height: 375px;
+left: 70px;
+top: 14352px;
+
+background: #FFFFFF;
+
+
+/* The journey begins with a comprehensive audit of your website to identify strengths, weaknesses, and opportunities */
+
+position: absolute;
+width: 252px;
+height: 155px;
+left: 102px;
+top: 14620px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+
+
+/* Rectangle 42 */
+
+position: absolute;
+width: 131px;
+height: 66px;
+left: 65px;
+top: 14540px;
+
+background: #222222;
+
+
+/* Step 1 */
+
+position: absolute;
+width: 108px;
+height: 29px;
+left: 101px;
+top: 14558px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Group 52 */
+
+position: absolute;
+width: 264px;
+height: 24.4px;
+left: 159px;
+top: 17139.46px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 11.04%;
+right: 87.2%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 14.56%;
+right: 84.25%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 17.5%;
+right: 82.3%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 19.58%;
+right: 79.04%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 22.71%;
+right: 77.09%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 24.65%;
+right: 74.13%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 27.63%;
+right: 70.63%;
+top: 91.25%;
+bottom: 8.63%;
+
+background: #000000;
+
+
+/* Group 51 */
+
+position: absolute;
+width: 209.34px;
+height: 217.03px;
+left: 614.46px;
+top: 17048.45px;
+
+filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+transform: rotate(-0.25deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 42.68%;
+right: 53.72%;
+top: 90.76%;
+bottom: 9.1%;
+
+background: #000000;
+transform: rotate(-0.25deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 49.83%;
+right: 42.79%;
+top: 90.76%;
+bottom: 9.11%;
+
+background: #000000;
+transform: rotate(-0.25deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 42.73%;
+right: 54.61%;
+top: 91.72%;
+bottom: 8.12%;
+
+background: #000000;
+transform: rotate(-90.25deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 42.7%;
+right: 47.94%;
+top: 91.26%;
+bottom: 8.6%;
+
+background: #000000;
+transform: rotate(-0.25deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 55.55%;
+right: 35.93%;
+top: 91.26%;
+bottom: 8.61%;
+
+background: #000000;
+transform: rotate(89.75deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 48.48%;
+right: 47.91%;
+top: 91.79%;
+bottom: 8.08%;
+
+background: #000000;
+transform: rotate(-0.25deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 42.68%;
+right: 42.73%;
+top: 90.76%;
+bottom: 8.08%;
+
+background: #000000;
+
+
+/* Vector 31 */
+
+position: absolute;
+width: 1454px;
+height: 0px;
+left: -2px;
+top: 17556.5px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.83%;
+right: 90.41%;
+top: 90.17%;
+bottom: 9.19%;
+
+background: #FFFFFF;
+border: 2px solid #000000;
+
+
+/* Group 57 */
+
+position: absolute;
+width: 428px;
+height: 29px;
+left: 929px;
+top: 17242px;
+
+
+
+/* Contact Us */
+
+position: absolute;
+width: 428px;
+height: 29px;
+left: 929px;
+top: 17242px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+color: #000000;
+
+
+
+/* Vector 32 */
+
+position: absolute;
+width: 16px;
+height: 0px;
+left: 1046px;
+top: 17258.5px;
+
+
+
+/* Vector 33 */
+
+position: absolute;
+width: 16px;
+height: 0px;
+left: 1220px;
+top: 17257px;
+
+
+
+/* Vector 34 */
+
+position: absolute;
+width: 6px;
+height: 0px;
+left: 759px;
+top: 17614px;
+
+
+
+/* Vector 35 */
+
+position: absolute;
+width: 6px;
+height: 0px;
+left: 839px;
+top: 17614px;
+
+
+
+/* Vector 36 */
+
+position: absolute;
+width: 6px;
+height: 0px;
+left: 544px;
+top: 17614px;
+
+
+
+/* Vector 37 */
+
+position: absolute;
+width: 6px;
+height: 0px;
+left: 639px;
+top: 17614px;
+
+
+
+/* THIS IS HOW IT WORKS */
+
+position: absolute;
+width: 1300px;
+height: 308px;
+left: 55px;
+top: 13905px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 154px;
+text-align: center;
+
+color: #FFFFFF;
+
+border: 1px solid #000000;
+
+
+/* WHAT CLIENT’S SAY? */
+
+position: absolute;
+width: 1300px;
+height: 308px;
+left: 55px;
+top: 11982px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 154px;
+text-align: center;
+
+color: #FFFFFF;
+
+border: 1px solid #000000;
+
+
+/* dreamina-2025-11-16-4110-“Create a minimalistic, futuristic ocean...d 1 */
+
+position: absolute;
+width: 1616px;
+height: 1115px;
+left: -83px;
+top: 17669px;
+
+background: url(dreamina-2025-11-16-4110-“Create a minimalistic, futuristic ocean...d);
+
+
+/* OUR WORKS (DETAILED) */
+
+position: absolute;
+width: 92px;
+height: 57px;
+left: 68px;
+top: 18659px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+border: 0.3px solid #FFFFFF;
+
+
+/* LET’S DISCUSS */
+
+position: absolute;
+width: 160px;
+height: 19px;
+left: 239px;
+top: 18697px;
+
+font-family: 'Silka';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+border: 0.2px solid #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 92.57%;
+right: 3.96%;
+top: 99.34%;
+bottom: 0.38%;
+
+background: #FFFFFF;
+
+
+/* diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc 3 */
+
+position: absolute;
+width: 199px;
+height: 395px;
+left: -119px;
+top: 12882px;
+
+background: url(diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc);
+
+
+/* diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc 4 */
+
+position: absolute;
+width: 204px;
+height: 395px;
+left: 743px;
+top: 12882px;
+
+background: url(diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc);
+
+
+/* diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc 5 */
+
+position: absolute;
+width: 199px;
+height: 395px;
+left: 246px;
+top: 13360px;
+
+background: url(diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc);
+
+
+/* diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc 6 */
+
+position: absolute;
+width: 202px;
+height: 395px;
+left: 1112px;
+top: 13360px;
+
+background: url(diverse-millennials-females-and-males-portraits-ov-2025-03-18-18-24-29-utc);
+
+
+/* Nathaniel Brooks */
+
+position: absolute;
+width: 507px;
+height: 37px;
+left: 166px;
+top: 13240px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Adrian Cole */
+
+position: absolute;
+width: 507px;
+height: 37px;
+left: 551px;
+top: 13718px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Marcus Ellwood */
+
+position: absolute;
+width: 507px;
+height: 37px;
+left: -315px;
+top: 13718px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Oliver Kane */
+
+position: absolute;
+width: 507px;
+height: 37px;
+left: 1092px;
+top: 13240px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+text-align: right;
+
+color: #000000;
+
+
+
+/* Layer_1 */
+
+position: absolute;
+width: 124px;
+height: 10px;
+left: 70px;
+top: 464px;
+
+mix-blend-mode: difference;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.25%;
+right: 91.73%;
+top: 935.23%;
+bottom: -930.71%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 94.18%;
+top: 768.77%;
+bottom: -760.89%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 98.7%;
+top: 659.1%;
+bottom: -651.17%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 93.33%;
+top: 475.08%;
+bottom: -467.15%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 98.7%;
+top: 364.73%;
+bottom: -356.8%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.25%;
+right: 94.21%;
+top: 197.56%;
+bottom: -193.01%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 91.67%;
+top: -0.07%;
+bottom: 8%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 97.94%;
+top: 1214.43%;
+bottom: -1125.88%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 95.78%;
+top: 1137.03%;
+bottom: -1048.36%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 6.64%;
+right: 91.94%;
+top: 1224.46%;
+bottom: -1140%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.51%;
+right: 91.15%;
+top: 1173.72%;
+bottom: -1085.17%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.51%;
+right: 91.94%;
+top: 1137.01%;
+bottom: -1048.93%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 90.79%;
+top: 1173.67%;
+bottom: -1085.12%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Layer_1 */
+
+position: absolute;
+width: 124px;
+height: 10px;
+left: 70px;
+top: 464px;
+
+mix-blend-mode: color-dodge;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.25%;
+right: 91.73%;
+top: 935.23%;
+bottom: -930.71%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 94.18%;
+top: 768.77%;
+bottom: -760.89%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 98.7%;
+top: 659.1%;
+bottom: -651.17%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 93.33%;
+top: 475.08%;
+bottom: -467.15%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 98.7%;
+top: 364.73%;
+bottom: -356.8%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.25%;
+right: 94.21%;
+top: 197.56%;
+bottom: -193.01%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0.39%;
+right: 91.67%;
+top: -0.07%;
+bottom: 8%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 97.94%;
+top: 1214.43%;
+bottom: -1125.88%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 95.78%;
+top: 1137.03%;
+bottom: -1048.36%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 6.64%;
+right: 91.94%;
+top: 1224.46%;
+bottom: -1140%;
+
+background: #FFFFFF;
+transform: rotate(180deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.51%;
+right: 91.15%;
+top: 1173.72%;
+bottom: -1085.17%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 3.51%;
+right: 91.94%;
+top: 1137.01%;
+bottom: -1048.93%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 90.79%;
+top: 1173.67%;
+bottom: -1085.12%;
+
+background: #FFFFFF;
+transform: rotate(-90deg);

@@ -1,26 +1,17 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useBackgroundDetection } from "@/hooks/useBackgroundDetection";
 
 const FloatingLogo = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const isDark = useBackgroundDetection();
 
   return (
     <div
       className="fixed z-30 pointer-events-none"
       style={{
-        left: "70px",
-        top: "35%",
-        transform: `translateY(${scrollY * 0.2}px) rotate(-90deg)`,
+        left: "25px",
+        top: "50%",
+        transform: "translateY(-50%) rotate(-90deg)",
         transformOrigin: "center center",
       }}
     >
@@ -28,12 +19,11 @@ const FloatingLogo = () => {
       <img
         src="/images/gridism-logo-tilted.svg"
         alt=""
-        className="select-none h-auto"
+        className="select-none h-auto transition-all duration-500 ease-in-out"
         aria-hidden="true"
         style={{
           width: "124px",
-          mixBlendMode: "difference",
-          filter: "invert(1)",
+          filter: isDark ? "invert(1)" : "invert(0)",
         }}
       />
     </div>

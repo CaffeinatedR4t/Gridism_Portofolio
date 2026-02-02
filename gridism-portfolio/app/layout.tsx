@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import FloatingLogo from "@/components/FloatingLogo";
 import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,6 +25,7 @@ export default function RootLayout({
       >
         <SmoothScroll>
           <Navbar />
+          <FloatingLogo />
           <main className="w-full">{children}</main>
         </SmoothScroll>
       </body>
