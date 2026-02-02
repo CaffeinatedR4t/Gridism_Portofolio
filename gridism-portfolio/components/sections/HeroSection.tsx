@@ -2,20 +2,20 @@ import FloatingLogo from "@/components/FloatingLogo";
 
 const HeroSection = () => {
   // Vertical text component for rotated labels
-  const VerticalText = ({ 
-    children, 
-    left, 
-    top 
-  }: { 
-    children: string; 
-    left: number; 
-    top: number;
+  const VerticalText = ({
+    children,
+    leftPercent,
+    topPercent,
+  }: {
+    children: string;
+    leftPercent: number;
+    topPercent: number;
   }) => (
     <p
       className="absolute text-[10px] leading-[12px] text-white whitespace-nowrap"
       style={{
-        left: `${left}px`,
-        top: `${top}px`,
+        left: `${leftPercent}%`,
+        top: `${topPercent}%`,
         transform: "rotate(90deg)",
         transformOrigin: "left top",
       }}
@@ -25,81 +25,73 @@ const HeroSection = () => {
   );
 
   return (
-    <section
-      className="relative w-full max-w-[1440px] mx-auto overflow-hidden"
-      style={{ height: "2293px" }}
-    >
-      {/* Background Image */}
+    <section className="relative w-full h-[160vw] max-h-[2293px] min-h-[100vh] overflow-hidden">
+      {/* Background Image - FIXED FILENAME */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 w-full h-full"
         style={{
           backgroundImage: "url('/images/Illustration37grg.png')",
           backgroundSize: "cover",
-          backgroundPosition: "center top",
+          backgroundPosition: "top center",
+          backgroundRepeat: "no-repeat",
         }}
       />
 
       {/* Floating tilted logo */}
       <FloatingLogo />
 
-      {/* Grid Lines (6 vertical lines) */}
+      {/* Grid Lines (6 vertical lines) - Responsive positions */}
       <div className="absolute inset-0 pointer-events-none">
-        {[160, 380, 600, 820, 1040, 1260].map((x) => (
+        {[11.1, 26.4, 41.7, 56.9, 72.2, 87.5].map((percent, index) => (
           <div
-            key={x}
+            key={index}
             className="absolute top-0 w-px h-full bg-white/20"
-            style={{ left: `${x}px`, mixBlendMode: "overlay" }}
+            style={{ left: `${percent}%`, mixBlendMode: "overlay" }}
           />
         ))}
       </div>
 
       {/* Content Container */}
       <div className="relative z-10 w-full h-full">
-
-        {/* Vertical Labels - Exact Figma Positions */}
-        <VerticalText left={168} top={188}>Human Centric Approach</VerticalText>
-        <VerticalText left={388} top={374}>Commitment to Crafting</VerticalText>
-        <VerticalText left={828} top={196}>Structure with Purpose</VerticalText>
-        <VerticalText left={168} top={712}>Consistency Loyalty</VerticalText>
-        <VerticalText left={610} top={693}>Growth by Design</VerticalText>
-        <VerticalText left={1048} top={917}>Creativity within Order</VerticalText>
-        <VerticalText left={1268} top={976}>Digital Creative Agency</VerticalText>
-        <VerticalText left={724} top={1160}>Grit Builds Precision</VerticalText>
+        {/* Vertical Labels - Using percentage for responsiveness */}
+        <VerticalText leftPercent={11.7} topPercent={8.2}>Human Centric Approach</VerticalText>
+        <VerticalText leftPercent={26.9} topPercent={16.3}>Commitment to Crafting</VerticalText>
+        <VerticalText leftPercent={57.5} topPercent={8.5}>Structure with Purpose</VerticalText>
+        <VerticalText leftPercent={11.7} topPercent={31}>Consistency Loyalty</VerticalText>
+        <VerticalText leftPercent={42.4} topPercent={30.2}>Growth by Design</VerticalText>
+        <VerticalText leftPercent={72.8} topPercent={40}>Creativity within Order</VerticalText>
+        <VerticalText leftPercent={88.1} topPercent={42.6}>Digital Creative Agency</VerticalText>
+        <VerticalText leftPercent={50.3} topPercent={50.6}>Grit Builds Precision</VerticalText>
 
         {/* "DESIGN" - Main Title */}
-        <div className="absolute" style={{ left: "612px", top: "497px" }}>
+        <div
+          className="absolute left-1/2 -translate-x-1/2"
+          style={{ top: "21.7%" }}
+        >
           <div
-            className="absolute -z-10"
+            className="absolute -z-10 w-full h-full scale-110"
             style={{
-              width: "489px",
-              height: "138px",
-              left: "-12px",
-              top: "6px",
               background: "linear-gradient(90deg, #000000 0%, rgba(174, 174, 174, 0) 100%)",
               backgroundBlendMode: "overlay",
             }}
           />
-          <h1
-            className="text-[120px] leading-[144px] font-normal text-white text-center"
-            style={{ width: "469px" }}
-          >
+          <h1 className="text-[8vw] lg:text-[120px] font-normal text-white text-center leading-none">
             DESIGN
           </h1>
         </div>
 
-        {/* Coordinates - Rotated 90deg */}
+        {/* Coordinates - Rotated 90deg on right side */}
         <p
-          className="absolute text-[16px] leading-[19px] text-white text-right whitespace-nowrap"
+          className="absolute text-[12px] lg:text-[16px] leading-[19px] text-white text-right whitespace-nowrap"
           style={{
-            left: "1364px",
-            top: "387px",
+            right: "2%",
+            top: "16.9%",
             transform: "rotate(90deg)",
-            transformOrigin: "left top",
+            transformOrigin: "right top",
           }}
         >
           20:36 | 6°10′06″ S, 106°45′32″ E
         </p>
-
       </div>
     </section>
   );

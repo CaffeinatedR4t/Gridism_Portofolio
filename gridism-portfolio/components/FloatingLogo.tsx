@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 const FloatingLogo = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -17,20 +16,25 @@ const FloatingLogo = () => {
 
   return (
     <div
-      className="fixed z-30 pointer-events-none left-1/2"
+      className="fixed z-30 pointer-events-none"
       style={{
-        top: "373px",
-        transform: `translateX(-50%) translateY(${scrollY * 0.3}px)`,
+        left: "70px",
+        top: "35%",
+        transform: `translateY(${scrollY * 0.2}px) rotate(-90deg)`,
+        transformOrigin: "center center",
       }}
     >
-      <Image
+      {/* Using img tag to avoid Next.js Image optimization issues with SVG */}
+      <img
         src="/images/gridism-logo-tilted.svg"
         alt=""
-        width={866}
-        height={249}
-        className="select-none"
+        className="select-none h-auto"
         aria-hidden="true"
-        style={{ mixBlendMode: "difference" }}
+        style={{
+          width: "124px",
+          mixBlendMode: "difference",
+          filter: "invert(1)",
+        }}
       />
     </div>
   );

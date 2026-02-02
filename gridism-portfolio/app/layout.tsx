@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} bg-black text-white`}
+        className={`${inter.className} bg-black text-white min-h-screen w-full overflow-x-hidden`}
         suppressHydrationWarning
       >
-        <Navbar />
-        <main>{children}</main>
+        <SmoothScroll>
+          <Navbar />
+          <main className="w-full">{children}</main>
+        </SmoothScroll>
       </body>
     </html>
   );
