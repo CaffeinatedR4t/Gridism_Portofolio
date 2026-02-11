@@ -29,14 +29,17 @@ const HeroSection = () => {
   );
 
   return (
-    <section className="relative w-full h-[160vw] max-h-[2293px] min-h-[100vh] overflow-hidden">
+    <section 
+      className="relative w-full h-[166vw] max-h-[2392px] min-h-[100vh] overflow-hidden"
+      data-theme="light"
+    >
       {/* Background Image */}
       <div
         className="absolute inset-0 w-full h-full"
         style={{
           backgroundImage: "url('/images/Illustration37grg.png')",
           backgroundSize: "cover",
-          backgroundPosition: "top center",
+          backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
         }}
       />
@@ -69,14 +72,14 @@ const HeroSection = () => {
           className="absolute left-1/2 -translate-x-1/2 text-center"
           style={{ top: "21.7%" }}
         >
-          {/* "A NEW ORDER" - NO background, just white text, SMALLER */}
+          {/* "A NEW ORDER" - NO background, just white text */}
           <h1 className="text-[6vw] lg:text-[90px] font-normal text-white leading-[1.1]">
             A NEW ORDER
           </h1>
           
           {/* "OF DESIGN" - "OF" has no background, "DESIGN" has black background */}
           <div className="flex items-center justify-center gap-4 lg:gap-6">
-            {/* "OF" - NO background, SMALLER */}
+            {/* "OF" - NO background */}
             <h2 className="text-[6vw] lg:text-[90px] font-normal text-white leading-[1.1]">
               OF
             </h2>
@@ -97,9 +100,9 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Live Time & Coordinates - SINGLE LINE, SMALL SIZE */}
+        {/* Live Time & Coordinates - BLACK COLOR */}
         <p
-          className="absolute text-[8px] lg:text-[10px] leading-none text-white whitespace-nowrap font-semibold"
+          className="absolute text-[8px] lg:text-[10px] leading-none text-black whitespace-nowrap font-semibold"
           style={{
             right: "2%",
             top: "20%",
