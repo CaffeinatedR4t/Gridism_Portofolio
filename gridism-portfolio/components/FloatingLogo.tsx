@@ -5,7 +5,7 @@ const FloatingLogo = () => {
     <div
       className="fixed z-30 pointer-events-none"
       style={{
-        left: "25px",
+        left: "0px",
         top: "50%",
         transform: "translateY(-50%) rotate(-90deg)",
         transformOrigin: "center center",
