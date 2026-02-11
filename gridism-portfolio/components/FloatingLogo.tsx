@@ -1,10 +1,6 @@
 "use client";
 
-import { useBackgroundDetection } from "@/hooks/useBackgroundDetection";
-
 const FloatingLogo = () => {
-  const isDark = useBackgroundDetection();
-
   return (
     <div
       className="fixed z-30 pointer-events-none"
@@ -19,11 +15,12 @@ const FloatingLogo = () => {
       <img
         src="/images/gridism-logo-tilted.svg"
         alt=""
-        className="select-none h-auto transition-all duration-500 ease-in-out"
+        className="select-none h-auto"
         aria-hidden="true"
         style={{
           width: "124px",
-          filter: isDark ? "invert(1)" : "invert(0)",
+          mixBlendMode: "difference",
+          filter: "invert(1)",
         }}
       />
     </div>
