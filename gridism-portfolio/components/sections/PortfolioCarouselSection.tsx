@@ -1,14 +1,13 @@
 "use client";
 
 const PortfolioCarouselSection = () => {
-  // Placeholder images - replace with actual images later
   const portfolioImages = [
-    { id: 1, name: "View 1ggfrr.png" },
-    { id: 2, name: "FEEDS IG NEW EZZRALE 2026 (3)ds.png" },
-    { id: 3, name: "image.png" },
-    { id: 4, name: "image-gen (3).jpg" },
-    { id: 5, name: "Kobe IX Elite Low EM Protro@2x.png" },
-    { id: 6, name: "Screenshot 2026-02-08 200555.png" },
+    { width: 310, height: 253 },  // View 1ggfrr
+    { width: 310, height: 253 },  // FEEDS IG NEW EZZRALE
+    { width: 263, height: 253 },  // image 11
+    { width: 316, height: 252 },  // image-gen (3)
+    { width: 257, height: 254 },  // Kobe IX Elite
+    { width: 407, height: 254 },  // Screenshot
   ];
 
   return (
@@ -19,17 +18,18 @@ const PortfolioCarouselSection = () => {
       <div className="flex gap-5 px-[295px]">
         {portfolioImages.map((image, index) => (
           <div 
-            key={image.id}
-            className="flex-none bg-gray-700 rounded"
+            key={index}
+            className="flex-none"
             style={{
-              width: index === 2 ? '263px' : index === 4 ? '257px' : index === 5 ? '407px' : '310px',
-              height: '253px',
+              width: `${image.width}px`,
+              height: `${image.height}px`,
             }}
           >
-            {/* Placeholder - will add images later */}
-            <div className="w-full h-full flex items-center justify-center text-white text-sm">
-              {image.name}
-            </div>
+            <img
+              src="/images/ezzralef.png"
+              alt={`Portfolio ${index + 1}`}
+              className="w-full h-full object-cover rounded"
+            />
           </div>
         ))}
       </div>
