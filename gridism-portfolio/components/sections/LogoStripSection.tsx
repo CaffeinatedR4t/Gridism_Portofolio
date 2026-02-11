@@ -2,8 +2,17 @@
 
 const LogoStripSection = () => {
   const logos = [
-    "5", "1", "2", "3", "4", "EZZRALE 02 11.png", 
-    "OSTON 04 6", "131", "107", "BE8", "BE19"
+    { width: 122, height: 86 },  // Logo 1 (5)
+    { width: 123, height: 87 },  // Logo 2 (1)
+    { width: 123, height: 87 },  // Logo 3 (2)
+    { width: 123, height: 87 },  // Logo 4 (3)
+    { width: 123, height: 87 },  // Logo 5 (4)
+    { width: 123, height: 87 },  // Logo 6 (EZZRALE 02 11)
+    { width: 124, height: 87 },  // Logo 7 (OSTON 04 6)
+    { width: 124, height: 87 },  // Logo 8 (131)
+    { width: 123, height: 87 },  // Logo 9 (107)
+    { width: 123, height: 87 },  // Logo 10 (BE8)
+    { width: 123, height: 87 },  // Logo 11 (BE19)
   ];
 
   return (
@@ -15,16 +24,17 @@ const LogoStripSection = () => {
         {logos.map((logo, index) => (
           <div 
             key={index}
-            className="flex-none bg-gray-700 rounded"
+            className="flex-none"
             style={{
-              width: index === 0 ? '122px' : '123px',
-              height: index === 0 ? '86px' : '87px',
+              width: `${logo.width}px`,
+              height: `${logo.height}px`,
             }}
           >
-            {/* Placeholder - will add logo images later */}
-            <div className="w-full h-full flex items-center justify-center text-white text-xs">
-              {logo}
-            </div>
+            <img
+              src="/images/ezzralef.png"
+              alt={`Logo ${index + 1}`}
+              className="w-full h-full object-cover"
+            />
           </div>
         ))}
       </div>
