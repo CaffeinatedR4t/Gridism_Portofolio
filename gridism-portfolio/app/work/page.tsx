@@ -1,9 +1,9 @@
-import HeroSectionWork from "@/components/sections/HeroSectionWork";
+import SectionWork from "@/components/sections/SectionWork";
 
 export default function Home() {
   return (
     <>
-    <HeroSectionWork></HeroSectionWork>
+    <SectionWork></SectionWork>
     </>
   );
 }
