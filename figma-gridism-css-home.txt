@@ -7,17 +7,6 @@ height: 13506px;
 background: #FFFFFF;
 
 
-/* envato-labs-image-edit - 2026-02-17T190328.660e 2 */
-
-position: absolute;
-width: 1496px;
-height: 2082px;
-left: -56px;
-top: -493px;
-
-background: url(envato-labs-image-edit - 2026-02-17T190328.660e.png);
-
-
 /* envato-labs-image-edit - 2026-02-17T190328.660e 3 */
 
 position: absolute;
@@ -808,7 +797,7 @@ top: 1936px;
 width: 310px;
 height: 253px;
 
-background: url(View 1ggfrr);
+background: url(View 1ggfrr.png);
 
 /* Inside auto layout */
 flex: none;
@@ -834,7 +823,7 @@ flex-grow: 0;
 width: 263px;
 height: 253px;
 
-background: url(image);
+background: url(image.png);
 
 /* Inside auto layout */
 flex: none;
@@ -860,7 +849,7 @@ flex-grow: 0;
 width: 257px;
 height: 254px;
 
-background: url(Kobe IX Elite Low EM Protro@2x);
+background: url(Kobe IX Elite Low EM Protro@2x.png);
 
 /* Inside auto layout */
 flex: none;
@@ -873,7 +862,7 @@ flex-grow: 0;
 width: 407px;
 height: 254px;
 
-background: url(Screenshot 2026-02-08 200555);
+background: url(Screenshot 2026-02-08 200555.png);
 
 /* Inside auto layout */
 flex: none;
@@ -1063,7 +1052,7 @@ top: 2858px;
 width: 310px;
 height: 253px;
 
-background: url(View 1ggfrr);
+background: url(View 1ggfrr.png);
 
 /* Inside auto layout */
 flex: none;
@@ -1089,7 +1078,7 @@ flex-grow: 0;
 width: 263px;
 height: 253px;
 
-background: url(image);
+background: url(image.png);
 
 /* Inside auto layout */
 flex: none;
@@ -1115,7 +1104,7 @@ flex-grow: 0;
 width: 257px;
 height: 254px;
 
-background: url(Kobe IX Elite Low EM Protro@2x);
+background: url(Kobe IX Elite Low EM Protro@2x.png);
 
 /* Inside auto layout */
 flex: none;
@@ -1128,7 +1117,7 @@ flex-grow: 0;
 width: 407px;
 height: 254px;
 
-background: url(Screenshot 2026-02-08 200555);
+background: url(Screenshot 2026-02-08 200555.png);
 
 /* Inside auto layout */
 flex: none;
@@ -2578,7 +2567,7 @@ right: 11.42%;
 top: 72.12%;
 bottom: 0.1%;
 
-background: url(Screenshot 2026-02-08 200555);
+background: url(Screenshot 2026-02-08 200555.png);
 
 
 /* Frame 62 */
