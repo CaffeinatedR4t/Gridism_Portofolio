@@ -2,31 +2,43 @@
 
 const KeyFeaturesSection = () => {
   return (
-    <section 
-      className="relative w-full bg-white py-24"
+    <section
+      className="relative w-full bg-white overflow-hidden"
       data-theme="light"
     >
-      <div className="max-w-[1440px] mx-auto px-[23.75%]">
+      <div
+        className="relative max-w-[1440px] mx-auto"
+        style={{ padding: "300px 200px 140px 119px" }}
+      >
         {/* Heading */}
-        <h2 
-          className="text-[96px] font-medium leading-[127px] text-center text-black mb-12"
+        <h2
           style={{
-            fontFamily: 'Switzer, sans-serif',
+            fontFamily: "'Switzer', sans-serif",
+            fontWeight: 500,
+            fontSize: "96px",
+            lineHeight: "127px",
+            color: "#000000",
+            maxWidth: "852px",
           }}
         >
-          KEY FEATURES THAT DEFINE US
+          Key Features That Define Us
         </h2>
 
-        {/* Chess Pieces Image */}
-        <div className="flex justify-center mt-16">
+        {/* Chess piece — absolute, right side, vertically centered */}
+        <div
+          className="absolute"
+          style={{
+            right: "80px",
+            top: "50%",
+            transform: "translateY(-50%)",
+            width: "307.88px",
+            height: "494px",
+          }}
+        >
           <img
             src="/images/Thumbnail Website Porto.png"
-            alt="Chess Pieces Illustration"
-            className="w-auto h-auto"
-            style={{
-              maxWidth: '517px',
-              maxHeight: '829.53px',
-            }}
+            alt="Chess Piece"
+            className="w-full h-full object-contain"
           />
         </div>
       </div>

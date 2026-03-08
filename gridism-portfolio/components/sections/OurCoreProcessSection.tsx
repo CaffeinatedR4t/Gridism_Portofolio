@@ -1,183 +1,199 @@
 "use client";
 
-import { useRef } from "react";
-
 const OurCoreProcessSection = () => {
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const tallestCard = 965; // Card 1 height — used to align bottoms
 
-  const processCards = [
+  const cards = [
     {
-      number: "01",
-      title: "ALIGN",
-      color: "#FF0000",
-      description: "Aligning the Goals & ROI. We quickly align on what \"success\" means—business goal, user outcome, key metrics, and constraints timeline tech brand",
-      result: "Result? everyone shares the same target and priorities.",
-      descriptionWeight: 700,
-      resultTop: "1798px",
+      number: "1.",
+      title: "Aligning the Goals & ROI",
+      description: null, // rendered manually below with bold/italic
+      width: 547,
+      height: 965,
+      imageHeight: 360,
     },
     {
-      number: "02",
-      title: "PROTO",
-      color: "#2436FF",
-      description: "We create a few solution directions and turn the best ones into interactive prototypes to test and validate early. AI helps speed up exploration, but decisions stay human and intentional.",
-      result: "Results? we choose the right direction before spending time polishing.",
-      descriptionWeight: 400,
-      resultTop: "1813px",
+      number: "2.",
+      title: "Prototype to Learn",
+      description: "We create a few solution directions and turn the best ones into interactive prototypes to test and validate early.\n\nAI helps speed up exploration, but decisions stay human and intentional.",
+      width: 425,
+      height: 756,
+      imageHeight: 280,
     },
     {
-      number: "03",
-      title: "CRAFT",
-      color: "#FFFFFF",
+      number: "3.",
+      title: "Craft",
       description: "We refine the chosen direction with ruthless attention to detail layout, typography, microcopy, interactions, states, and edge cases, so it ends up premium and consistent.",
-      result: "Results? the product feels \"finished,\" not just \"designed.\"",
-      descriptionWeight: 400,
-      resultTop: "1764px",
-    },
-    {
-      number: "04",
-      title: "SHIP",
-      color: "#FFC400",
-      description: "We prepare clean handoff assets, specs, and guidance, then support implementation through reviews and QA to keep design quality intact.",
-      result: "Results? what gets built matches the intended experience.",
-      descriptionWeight: 400,
-      resultTop: "1764px",
+      width: 314,
+      height: 551,
+      imageHeight: 200,
     },
   ];
 
   return (
-    <section 
-      className="relative w-full bg-white overflow-hidden"
+    <section
+      className="relative w-full bg-white"
       data-theme="light"
     >
       {/* Heading */}
-      <div className="max-w-[1440px] mx-auto py-16 px-8">
-        <h2 
-          className="text-[128px] leading-[169px] text-center text-black font-medium"
+      <div
+        style={{
+          paddingTop: "80px",
+          paddingLeft: "4.86%",
+          paddingBottom: "60px",
+        }}
+      >
+        <h2
           style={{
-            fontFamily: 'Switzer, sans-serif',
-            letterSpacing: '-0.02em',
+            fontFamily: "'Switzer', sans-serif",
+            fontWeight: 500,
+            fontSize: "128px",
+            lineHeight: "169px",
+            letterSpacing: "-0.02em",
+            color: "#000000",
+            margin: 0,
           }}
         >
-          OUR CORE PROCESS
+          Our Core Process
         </h2>
       </div>
 
-      {/* Horizontal Slider Container */}
-      <div 
-        ref={scrollContainerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scrollbar-hide"
+      {/* Cards row — bottom aligned via absolute positioning inside a relative container
+          Container height = tallest card (965px)
+          Each card sits at top = tallestCard - card.height so bottoms align         */}
+      <div
         style={{
-          scrollBehavior: 'smooth',
-          WebkitOverflowScrolling: 'touch',
+          position: "relative",
+          height: `${tallestCard}px`,
+          marginLeft: "70px",
+          marginBottom: "80px",
         }}
       >
-        {/* Process Cards - Horizontal Slides */}
-        {processCards.map((card, index) => (
-          <div 
-            key={index}
-            className="relative flex-none snap-center snap-always"
-            style={{ 
-              width: '100vw',
-              maxWidth: '1442px',
-              height: '2219px',
-            }}
-          >
-            {/* Background Image */}
-            <img
-              src="/images/envato-labs-image-edit - 2026-02-17T205414.760S 2.png"
-              alt={`${card.title} background`}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+        {cards.map((card, i) => {
+          // Calculate left offset: sum of previous card widths + gaps
+          const gap = 60;
+          const leftOffset = cards
+            .slice(0, i)
+            .reduce((acc, c) => acc + c.width + gap, 0);
 
-            {/* Content Overlay */}
-            <div className="absolute inset-0">
-              {/* Number */}
-              <h3 
-                className="absolute font-bold"
+          // Top offset so all bottoms align
+          const topOffset = tallestCard - card.height;
+
+          return (
+            <div
+              key={i}
+              style={{
+                position: "absolute",
+                left: `${leftOffset}px`,
+                top: `${topOffset}px`,
+                width: `${card.width}px`,
+                height: `${card.height}px`,
+                backgroundColor: "#000000",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              {/* Text content area */}
+              <div
                 style={{
-                  fontFamily: 'Switzer, sans-serif',
-                  fontSize: '128px',
-                  lineHeight: '169px',
-                  letterSpacing: '-0.02em',
-                  color: '#FFFFFF',
-                  left: '5.96%',
-                  top: '44.98%',
+                  flex: 1,
+                  padding: "32px 28px 24px 28px",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "20px",
+                  overflow: "hidden",
                 }}
               >
-                {card.number}
-              </h3>
+                {/* Number + Title */}
+                <p
+                  style={{
+                    fontFamily: "'Switzer', sans-serif",
+                    fontWeight: 700,
+                    fontSize: i === 0 ? "24px" : i === 1 ? "22px" : "20px",
+                    lineHeight: i === 0 ? "32px" : "28px",
+                    color: "#FFFFFF",
+                    margin: 0,
+                    textAlign: "justify",
+                  }}
+                >
+                  {card.number}&nbsp;&nbsp;&nbsp;{card.title}
+                </p>
 
-              {/* Title */}
-              <h2 
-                className="absolute font-semibold flex items-center justify-center"
+                {/* Description */}
+                {i === 0 ? (
+                  <div>
+                    <p
+                      style={{
+                        fontFamily: "'Switzer', sans-serif",
+                        fontWeight: 400,
+                        fontSize: "16px",
+                        lineHeight: "22px",
+                        color: "#FFFFFF",
+                        margin: 0,
+                        textAlign: "justify",
+                      }}
+                    >
+                      <strong>Aligning the Goals & ROI.</strong>
+                      {" We quickly align on what "}
+                      <strong>"success"</strong>
+                      {" means—business goal, user outcome, key metrics, and constraints"}
+                    </p>
+                    <p
+                      style={{
+                        fontFamily: "'Switzer', sans-serif",
+                        fontWeight: 400,
+                        fontStyle: "italic",
+                        fontSize: "16px",
+                        lineHeight: "22px",
+                        color: "#FFFFFF",
+                        margin: 0,
+                        marginTop: "16px",
+                        textAlign: "justify",
+                      }}
+                    >
+                      timeline&nbsp;&nbsp;&nbsp;tech&nbsp;&nbsp;&nbsp;brand
+                    </p>
+                  </div>
+                ) : (
+                  <p
+                    style={{
+                      fontFamily: "'Switzer', sans-serif",
+                      fontWeight: 400,
+                      fontSize: i === 1 ? "16px" : "14px",
+                      lineHeight: i === 1 ? "22px" : "20px",
+                      color: "#FFFFFF",
+                      margin: 0,
+                      textAlign: "justify",
+                      whiteSpace: "pre-line",
+                    }}
+                  >
+                    {card.description}
+                  </p>
+                )}
+              </div>
+
+              {/* Bottom image */}
+              <div
                 style={{
-                  fontFamily: 'Switzer, sans-serif',
-                  fontSize: '400px',
-                  lineHeight: '528px',
-                  letterSpacing: '-0.02em',
-                  color: card.color,
-                  top: '47.72%',
-                  left: card.title === "ALIGN" ? '0%' : card.title === "SHIP" ? '-10.89%' : '3.33%',
-                  right: card.title === "ALIGN" ? '6.66%' : card.title === "SHIP" ? '17.55%' : '3.33%',
+                  width: "100%",
+                  height: `${card.imageHeight}px`,
+                  flexShrink: 0,
                 }}
               >
-                {card.title}
-              </h2>
-
-              {/* Description */}
-              <p 
-                className="absolute text-white text-justify"
-                style={{
-                  fontFamily: 'Switzer, sans-serif',
-                  fontSize: '32px',
-                  lineHeight: '42px',
-                  fontWeight: card.descriptionWeight,
-                  width: '581px',
-                  left: '384px',
-                  top: '1502px',
-                }}
-              >
-                {card.description}
-              </p>
-
-              {/* Result */}
-              <p 
-                className="absolute text-white text-justify font-semibold"
-                style={{
-                  fontFamily: 'Switzer, sans-serif',
-                  fontSize: '32px',
-                  lineHeight: '42px',
-                  fontWeight: 600,
-                  width: '420px',
-                  left: '384px',
-                  top: card.resultTop,
-                }}
-              >
-                {card.result}
-              </p>
+                <img
+                  src="/images/ezzralef.png"
+                  alt={`Process ${card.number} preview`}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    display: "block",
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Navigation Dots (Optional) */}
-      <div className="flex justify-center gap-4 py-8">
-        {processCards.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => {
-              if (scrollContainerRef.current) {
-                const slideWidth = scrollContainerRef.current.offsetWidth;
-                scrollContainerRef.current.scrollTo({
-                  left: slideWidth * index,
-                  behavior: 'smooth',
-                });
-              }
-            }}
-            className="w-3 h-3 rounded-full bg-gray-400 hover:bg-black transition-colors"
-            aria-label={`Go to slide ${index + 1}`}
-          />
-        ))}
+          );
+        })}
       </div>
     </section>
   );

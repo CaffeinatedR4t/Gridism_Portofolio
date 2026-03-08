@@ -1,11 +1,12 @@
 "use client";
 
 import { useJakartaTime } from "@/hooks/useJakartaTime";
+import { useColorDetection } from "@/hooks/useColorDetection";
 
 const HeroSection = () => {
   const jakartaTime = useJakartaTime();
+  const isDark = useColorDetection(400);
 
-  // Vertical text component for rotated labels
   const VerticalText = ({
     children,
     leftPercent,
@@ -16,8 +17,13 @@ const HeroSection = () => {
     topPercent: number;
   }) => (
     <p
-      className="absolute text-[10px] leading-[12px] text-white whitespace-nowrap"
+      className="absolute whitespace-nowrap"
       style={{
+        fontFamily: "'Silka', sans-serif",
+        fontWeight: 400,
+        fontSize: "10px",
+        lineHeight: "12px",
+        color: "#FFFFFF",
         left: `${leftPercent}%`,
         top: `${topPercent}%`,
         transform: "rotate(90deg)",
@@ -29,83 +35,109 @@ const HeroSection = () => {
   );
 
   return (
-    <section 
-      className="relative w-full h-[166vw] max-h-[2392px] min-h-[100vh] overflow-hidden"
-      data-theme="light"
+    <section
+      className="relative w-full overflow-hidden"
+      style={{ height: "1251px" }}
+      data-theme="dark"
     >
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 w-full h-full"
-        style={{
-          backgroundImage: "url('/images/Illustration37grg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center center",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
+      {/* Background Image — fills edge to edge, no gaps */}
+      <div className="absolute inset-0 w-full h-full">
+        <img
+          src="/images/1.webp"
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full"
+          style={{
+            objectFit: "cover",
+            objectPosition: "center top",
+            display: "block",
+          }}
+        />
+      </div>
 
-      {/* Grid Lines (6 vertical lines) */}
+      {/* Grid Lines */}
       <div className="absolute inset-0 pointer-events-none">
-        {[11.1, 26.4, 41.7, 56.9, 72.2, 87.5].map((percent, index) => (
+        {[160, 394, 628, 862, 1096, 1330].map((leftPx, i) => (
           <div
-            key={index}
-            className="absolute top-0 w-px h-full bg-white/20"
-            style={{ left: `${percent}%`, mixBlendMode: "overlay" }}
+            key={i}
+            className="absolute top-0 h-full"
+            style={{
+              left: `${leftPx}px`,
+              width: "1px",
+              background: "rgba(255,255,255,0.3)",
+              mixBlendMode: "overlay",
+            }}
           />
         ))}
       </div>
 
-      {/* Content Container */}
+      {/* Content */}
       <div className="relative z-10 w-full h-full">
+
         {/* Vertical Labels */}
-        <VerticalText leftPercent={12} topPercent={8.2}>Human Centric Approach</VerticalText>
+        <VerticalText leftPercent={12}   topPercent={8.2} >Human Centric Approach</VerticalText>
         <VerticalText leftPercent={27.3} topPercent={16.3}>Commitment to Crafting</VerticalText>
-        <VerticalText leftPercent={57.8} topPercent={8.5}>Structure with Purpose</VerticalText>
-        <VerticalText leftPercent={12} topPercent={31}>Consistency Loyalty</VerticalText>
+        <VerticalText leftPercent={57.8} topPercent={8.5} >Structure with Purpose</VerticalText>
+        <VerticalText leftPercent={12}   topPercent={31}  >Consistency Loyalty</VerticalText>
         <VerticalText leftPercent={42.6} topPercent={30.2}>Growth by Design</VerticalText>
-        <VerticalText leftPercent={73.2} topPercent={40}>Creativity within Order</VerticalText>
+        <VerticalText leftPercent={73.2} topPercent={40}  >Creativity within Order</VerticalText>
         <VerticalText leftPercent={88.4} topPercent={42.6}>Digital Creative Agency</VerticalText>
         <VerticalText leftPercent={50.3} topPercent={50.6}>Grit Builds Precision</VerticalText>
 
-        {/* "A NEW ORDER OF DESIGN" - Main Title */}
+        {/* "A NEW ORDER OF DESIGN" */}
         <div
-          className="absolute left-1/2 -translate-x-1/2 text-center"
-          style={{ top: "21.7%" }}
+          className="absolute"
+          style={{ left: "283px", top: "384px", width: "870px", height: "269px" }}
         >
-          {/* "A NEW ORDER" - NO background, just white text */}
-          <h1 className="text-[6vw] lg:text-[90px] font-normal text-white leading-[1.1]">
-            A NEW ORDER
-          </h1>
-          
-          {/* "OF DESIGN" - "OF" has no background, "DESIGN" has black background */}
-          <div className="flex items-center justify-center gap-4 lg:gap-6">
-            {/* "OF" - NO background */}
-            <h2 className="text-[6vw] lg:text-[90px] font-normal text-white leading-[1.1]">
-              OF
-            </h2>
+          {/* NO white overlay — that was causing the white border */}
 
-            {/* "DESIGN" - WITH BLACK BACKGROUND */}
-            <div className="relative inline-block">
-              <div
-                className="absolute inset-0 -z-10"
-                style={{
-                  background: "linear-gradient(90deg, #000000 0%, rgba(174, 174, 174, 0) 100%)",
-                  backgroundBlendMode: "overlay",
-                }}
-              />
-              <h2 className="text-[6vw] lg:text-[90px] font-normal text-white leading-[1.1] px-4">
-                DESIGN
+          <div className="relative flex flex-col items-center justify-center h-full">
+            <h1
+              className="font-normal text-white leading-[1.1] text-center"
+              style={{ fontFamily: "'Silka', sans-serif", fontSize: "90px" }}
+            >
+              A NEW ORDER
+            </h1>
+
+            <div className="flex items-center justify-center gap-6">
+              <h2
+                className="font-normal text-white leading-[1.1]"
+                style={{ fontFamily: "'Silka', sans-serif", fontSize: "90px" }}
+              >
+                OF
               </h2>
+
+              <div className="relative inline-block">
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background: "linear-gradient(90deg, #000000 0%, rgba(174,174,174,0) 100%)",
+                    mixBlendMode: "overlay",
+                    zIndex: 0,
+                  }}
+                />
+                <h2
+                  className="relative font-normal text-white leading-[1.1] px-4"
+                  style={{
+                    fontFamily: "'Silka', sans-serif",
+                    fontSize: "90px",
+                    zIndex: 1,
+                  }}
+                >
+                  DESIGN
+                </h2>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Live Time & Coordinates - BLACK COLOR */}
+        {/* Live Time & Coordinates — your exact position reference */}
         <p
-          className="absolute text-[8px] lg:text-[10px] leading-none text-black whitespace-nowrap font-semibold"
+          className="absolute text-[8px] lg:text-[10px] leading-none whitespace-nowrap font-semibold"
           style={{
+            color: isDark ? "#FFFFFF" : "#000000",
             right: "2%",
-            top: "20%",
+            top: "50%",
             transform: "rotate(90deg)",
             transformOrigin: "right top",
             letterSpacing: "1.5px",
@@ -113,6 +145,7 @@ const HeroSection = () => {
         >
           {jakartaTime || "00:00"} | 6°10′06″ S, 106°45′32″ E
         </p>
+
       </div>
     </section>
   );
