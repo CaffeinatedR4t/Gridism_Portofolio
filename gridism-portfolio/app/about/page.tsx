@@ -1,9 +1,9 @@
-import SectionAbout from "@/components/sections/SectionAbout.tsx";
+import AboutSection from "@/components/sections/AboutSection";
 
 export default function Home() {
   return (
     <>
-    <SectionAbout></SectionAbout>
+    <AboutSection></AboutSection>
     </>
   );
 }

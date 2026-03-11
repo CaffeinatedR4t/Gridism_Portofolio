@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import FloatingLogo from "@/components/FloatingLogo";
 import SmoothScroll from "@/components/SmoothScroll";
+import FooterSection from "@/components/sections/FooterSection"; 
 
 const inter = Inter({ subsets: ["latin"] });
 

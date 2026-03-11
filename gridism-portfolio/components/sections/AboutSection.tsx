@@ -11,7 +11,7 @@ const STRATEGY_GROUPS = [
     ["Creative Development", "Research & Development", "Front-end Development", "Back-end Development"]
 ];
 
-const SectionAbout = () => {
+const AboutSection = () => {
     // Shared class for the mission statement headers
     const missionHeaderClass = "text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light text-black tracking-wider leading-relaxed";
     
@@ -90,10 +90,14 @@ const SectionAbout = () => {
                             </div>
                         ))}
                     </div>
+
+                    {/* <div className="flex flex-row gap-5">
+                        <Image src="    "></Image>
+                    </div> */}
                 </div>
             </div>
         </section>
     );
 };
 
-export default SectionAbout;
+export default AboutSection;

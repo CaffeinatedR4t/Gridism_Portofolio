@@ -13,7 +13,7 @@ const SectionWork = () => {
 
     return (
         <>
-        <section data-navbar-theme="dark" className="bg-black">
+        <section data-theme="light" className="bg-black">
             <section className="max-w-[1440px] min-h-[100vh] flex justify-center items-center mx-auto">
                 <div className="relative mt-[3rem] w-[80%] min-h-[500px]">
                     <div className="flex">
