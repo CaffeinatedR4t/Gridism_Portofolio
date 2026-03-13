@@ -3,8 +3,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import FloatingLogo from "@/components/FloatingLogo";
+import FloatingJakartaTime from "@/components/FloatingJakartaTime";
 import SmoothScroll from "@/components/SmoothScroll";
-import FooterSection from "@/components/sections/FooterSection"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,13 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${inter.className} min-h-screen w-full`}
-        suppressHydrationWarning
-      >
+      <body className={`${inter.className} min-h-screen w-full`} suppressHydrationWarning>
         <SmoothScroll>
           <Navbar />
           <FloatingLogo />
+          <FloatingJakartaTime />
           <main className="w-full">{children}</main>
         </SmoothScroll>
       </body>

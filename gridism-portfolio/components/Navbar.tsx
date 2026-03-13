@@ -55,7 +55,7 @@ const Navbar = () => {
         </Link>
 
         {/* Nav links — always white, difference blend handles contrast */}
-        <ul className="flex items-center gap-8 lg:gap-12">
+        <ul className="flex items-center gap-8 lg:gap-35">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
