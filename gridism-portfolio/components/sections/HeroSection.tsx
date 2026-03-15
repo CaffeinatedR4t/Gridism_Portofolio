@@ -1,11 +1,26 @@
 "use client";
 
-import { useJakartaTime } from "@/hooks/useJakartaTime";
-import { useColorDetection } from "@/hooks/useColorDetection";
+import { useEffect, useMemo, useState } from "react";
 
 const HeroSection = () => {
-  const jakartaTime = useJakartaTime();
-  const isDark = useColorDetection(400);
+  const [viewport, setViewport] = useState({ w: 1440, h: 900 });
+
+  useEffect(() => {
+    const update = () => setViewport({ w: window.innerWidth, h: window.innerHeight });
+    update();
+    window.addEventListener("resize", update, { passive: true });
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  const objectPosition = useMemo(() => {
+    const aspect = viewport.w / viewport.h;
+    const x = "center";
+    let y = "50%";
+    if (aspect >= 1.8) y = "45%";
+    if (aspect >= 2.1) y = "42%";
+    if (aspect <= 1.2) y = "55%";
+    return `${x} ${y}`;
+  }, [viewport.w, viewport.h]);
 
   const VerticalText = ({
     children,
@@ -17,17 +32,16 @@ const HeroSection = () => {
     topPercent: number;
   }) => (
     <p
-      className="absolute whitespace-nowrap"
+      className="absolute text-white whitespace-nowrap"
       style={{
-        fontFamily: "'Silka', sans-serif",
-        fontWeight: 400,
-        fontSize: "10px",
-        lineHeight: "12px",
-        color: "#FFFFFF",
         left: `${leftPercent}%`,
         top: `${topPercent}%`,
         transform: "rotate(90deg)",
         transformOrigin: "left top",
+        fontSize: "clamp(9px, 0.7vw, 10px)",
+        lineHeight: "12px",
+        fontFamily: "'Switzer', sans-serif",
+        fontWeight: 400,
       }}
     >
       {children}
@@ -37,19 +51,19 @@ const HeroSection = () => {
   return (
     <section
       className="relative w-full overflow-hidden"
-      style={{ height: "1251px" }}
-      data-theme="dark"
+      data-theme="light"
+      style={{ height: "100svh" }}
     >
-      {/* Background Image — fills edge to edge, no gaps */}
+      {/* Background */}
       <div className="absolute inset-0 w-full h-full">
         <img
-          src="/images/1.webp"
+          src="/images/about-hero.webp"
           alt=""
           aria-hidden="true"
           className="w-full h-full"
           style={{
             objectFit: "cover",
-            objectPosition: "center top",
+            objectPosition,
             display: "block",
           }}
         />
@@ -57,14 +71,13 @@ const HeroSection = () => {
 
       {/* Grid Lines */}
       <div className="absolute inset-0 pointer-events-none">
-        {[160, 394, 628, 862, 1096, 1330].map((leftPx, i) => (
+        {[11.1, 26.4, 41.7, 56.9, 72.2, 87.5].map((percent, index) => (
           <div
-            key={i}
-            className="absolute top-0 h-full"
+            key={index}
+            className="absolute top-0 w-px h-full"
             style={{
-              left: `${leftPx}px`,
-              width: "1px",
-              background: "rgba(255,255,255,0.3)",
+              left: `${percent}%`,
+              background: "rgba(255,255,255,0.20)",
               mixBlendMode: "overlay",
             }}
           />
@@ -73,79 +86,82 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full h-full">
-
         {/* Vertical Labels */}
-        <VerticalText leftPercent={12}   topPercent={8.2} >Human Centric Approach</VerticalText>
+        <VerticalText leftPercent={12} topPercent={8.2}>Human Centric Approach</VerticalText>
         <VerticalText leftPercent={27.3} topPercent={16.3}>Commitment to Crafting</VerticalText>
-        <VerticalText leftPercent={57.8} topPercent={8.5} >Structure with Purpose</VerticalText>
-        <VerticalText leftPercent={12}   topPercent={31}  >Consistency Loyalty</VerticalText>
+        <VerticalText leftPercent={57.8} topPercent={8.5}>Structure with Purpose</VerticalText>
+        <VerticalText leftPercent={12} topPercent={31}>Consistency Loyalty</VerticalText>
         <VerticalText leftPercent={42.6} topPercent={30.2}>Growth by Design</VerticalText>
-        <VerticalText leftPercent={73.2} topPercent={40}  >Creativity within Order</VerticalText>
+        <VerticalText leftPercent={73.2} topPercent={40}>Creativity within Order</VerticalText>
         <VerticalText leftPercent={88.4} topPercent={42.6}>Digital Creative Agency</VerticalText>
         <VerticalText leftPercent={50.3} topPercent={50.6}>Grit Builds Precision</VerticalText>
 
-        {/* "A NEW ORDER OF DESIGN" */}
+        {/* Title block — centered */}
         <div
-          className="absolute"
-          style={{ left: "283px", top: "384px", width: "870px", height: "269px" }}
+          className="absolute left-1/2 top-1/2 text-center"
+          style={{
+            transform: "translate(-50%, -50%)",
+            width: "min(92vw, 1100px)",
+          }}
         >
-          {/* NO white overlay — that was causing the white border */}
+          <h1
+            style={{
+              fontFamily: "'Switzer', sans-serif",
+              fontWeight: 400,
+              color: "#FFFFFF",
+              margin: 0,
+              lineHeight: 1.05,
+              fontSize: "clamp(44px, 6vw, 90px)",
+            }}
+          >
+            A NEW ORDER
+          </h1>
 
-          <div className="relative flex flex-col items-center justify-center h-full">
-            <h1
-              className="font-normal text-white leading-[1.1] text-center"
-              style={{ fontFamily: "'Silka', sans-serif", fontSize: "90px" }}
+          <div
+            className="flex items-center justify-center"
+            style={{ gap: "clamp(12px, 2vw, 24px)" }}
+          >
+            <h2
+              style={{
+                fontFamily: "'Switzer', sans-serif",
+                fontWeight: 400,
+                color: "#FFFFFF",
+                margin: 0,
+                lineHeight: 1.05,
+                fontSize: "clamp(44px, 6vw, 90px)",
+              }}
             >
-              A NEW ORDER
-            </h1>
+              OF
+            </h2>
 
-            <div className="flex items-center justify-center gap-6">
+            <div className="relative inline-block">
+              <div
+                className="absolute inset-0 -z-10"
+                style={{
+                  background:
+                    "linear-gradient(90deg, #000000 0%, rgba(174, 174, 174, 0) 100%)",
+                  backgroundBlendMode: "overlay",
+                }}
+              />
               <h2
-                className="font-normal text-white leading-[1.1]"
-                style={{ fontFamily: "'Silka', sans-serif", fontSize: "90px" }}
+                style={{
+                  fontFamily: "'Switzer', sans-serif",
+                  fontWeight: 400,
+                  color: "#FFFFFF",
+                  margin: 0,
+                  lineHeight: 1.05,
+                  fontSize: "clamp(44px, 6vw, 90px)",
+                  paddingLeft: "clamp(10px, 1.2vw, 16px)",
+                  paddingRight: "clamp(10px, 1.2vw, 16px)",
+                }}
               >
-                OF
+                DESIGN
               </h2>
-
-              <div className="relative inline-block">
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background: "linear-gradient(90deg, #000000 0%, rgba(174,174,174,0) 100%)",
-                    mixBlendMode: "overlay",
-                    zIndex: 0,
-                  }}
-                />
-                <h2
-                  className="relative font-normal text-white leading-[1.1] px-4"
-                  style={{
-                    fontFamily: "'Silka', sans-serif",
-                    fontSize: "90px",
-                    zIndex: 1,
-                  }}
-                >
-                  DESIGN
-                </h2>
-              </div>
             </div>
           </div>
         </div>
 
-        {/* Live Time & Coordinates — your exact position reference */}
-        <p
-          className="absolute text-[8px] lg:text-[10px] leading-none whitespace-nowrap font-semibold"
-          style={{
-            color: isDark ? "#FFFFFF" : "#000000",
-            right: "2%",
-            top: "50%",
-            transform: "rotate(90deg)",
-            transformOrigin: "right top",
-            letterSpacing: "1.5px",
-          }}
-        >
-          {jakartaTime || "00:00"} | 6°10′06″ S, 106°45′32″ E
-        </p>
-
+        {/* Jakarta time REMOVED (now floating component) */}
       </div>
     </section>
   );
