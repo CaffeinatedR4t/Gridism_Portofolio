@@ -1,34 +1,40 @@
 "use client";
 
 const PortfolioCarouselSection = () => {
-  const portfolioImages = [
-    { width: 310, height: 253 },  // View 1ggfrr
-    { width: 310, height: 253 },  // FEEDS IG NEW EZZRALE
-    { width: 263, height: 253 },  // image 11
-    { width: 316, height: 252 },  // image-gen (3)
-    { width: 257, height: 254 },  // Kobe IX Elite
-    { width: 407, height: 254 },  // Screenshot
+  const images = [
+    { w: 310, h: 253 },
+    { w: 310, h: 253 },
+    { w: 263, h: 253 },
+    { w: 316, h: 252 },
+    { w: 257, h: 254 },
+    { w: 407, h: 254 },
   ];
 
   return (
-    <section 
-      className="relative w-full bg-black py-16 overflow-hidden"
+    <section
+      className="relative w-full bg-black overflow-hidden"
+      style={{ height: "254px" }}
       data-theme="dark"
     >
-      <div className="flex gap-5 px-[295px]">
-        {portfolioImages.map((image, index) => (
-          <div 
-            key={index}
+      <div
+        className="absolute flex flex-row items-center"
+        style={{
+          left: "-508px",
+          top: "0px",
+          gap: "20px",
+          padding: "0px 295px",
+        }}
+      >
+        {images.map((img, i) => (
+          <div
+            key={i}
             className="flex-none"
-            style={{
-              width: `${image.width}px`,
-              height: `${image.height}px`,
-            }}
+            style={{ width: `${img.w}px`, height: `${img.h}px` }}
           >
             <img
               src="/images/ezzralef.png"
-              alt={`Portfolio ${index + 1}`}
-              className="w-full h-full object-cover rounded"
+              alt={`Portfolio ${i + 1}`}
+              className="w-full h-full object-cover"
             />
           </div>
         ))}

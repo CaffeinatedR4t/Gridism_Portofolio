@@ -2,165 +2,184 @@
 
 const FooterSection = () => {
   return (
-    <section 
+    <section
       className="relative w-full bg-white"
       data-theme="light"
     >
-      {/* White Background Section - Extended Height */}
-      <div 
+      {/* ── White upper footer ── */}
+      <div
         className="relative w-full bg-white"
-        style={{
-          height: '1000px',
-        }}
+        style={{ height: "1000px" }}
       >
-        <div className="absolute inset-0 flex flex-col items-center justify-center px-[10%]">
-          {/* Logo Row - Centered, 3 Columns */}
-          <div className="flex items-center justify-center gap-32 mb-16">
-            {/* Left - GRIDISM Text */}
-            <p 
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+
+          {/* Three-column logo row */}
+          <div className="flex items-center justify-center gap-32 mb-16 w-full px-[10%]">
+            <p
               className="text-black text-[24px] tracking-[0.3em]"
-              style={{
-                fontFamily: 'Silka, sans-serif',
-              }}
+              style={{ fontFamily: "'Switzer', sans-serif" }}
             >
               G R I D I S M
             </p>
 
-            {/* Center - Big Logo Icon (2x bigger) */}
             <img
               src="/images/gridism-logo.svg"
               alt="Gridism Logo"
-              style={{
-                width: '418px',
-                height: '434px',
-              }}
+              style={{ width: "418px", height: "434px" }}
             />
 
-            {/* Right - Agency Info */}
             <div className="flex flex-col gap-4 text-right">
-              {/* Web Development & Branding Agency */}
-              <p 
+              <p
                 className="text-black text-[24px] leading-[29px]"
-                style={{
-                  fontFamily: 'Silka, sans-serif',
-                }}
+                style={{ fontFamily: "'Switzer', sans-serif" }}
               >
                 Web Development<br />& Branding Agency
               </p>
-
-              {/* Contact Us */}
-              <p 
-                className="text-black text-[24px] leading-[29px]"
-                style={{
-                  fontFamily: 'Silka, sans-serif',
-                }}
+              <a
+                href="mailto:hello@gridism.com"
+                className="text-black text-[24px] leading-[29px] cursor-pointer hover:opacity-60 transition-opacity"
+                style={{ fontFamily: "'Switzer', sans-serif", textDecoration: "none" }}
               >
-                — Contact Us —
-              </p>
+                —&nbsp; Contact Us &nbsp;—
+              </a>
             </div>
           </div>
 
-          {/* Full Width Horizontal Line */}
-          <div className="w-full h-[1px] bg-black my-8" />
+          {/* Full-width line */}
+          <div style={{ width: "100vw", height: "1px", backgroundColor: "#000000" }} />
 
-          {/* Bottom Links Row */}
-          <div className="w-full flex justify-between items-center">
-            {/* Left */}
-            <p 
+          {/* Bottom bar */}
+          <div
+            className="flex justify-between items-center"
+            style={{
+              width: "100%",
+              paddingLeft: "24px",
+              paddingRight: "24px",
+              paddingTop: "20px",
+              paddingBottom: "20px",
+              boxSizing: "border-box",
+            }}
+          >
+            <p
               className="text-black text-[16px] leading-[19px]"
-              style={{
-                fontFamily: 'Silka, sans-serif',
-              }}
+              style={{ fontFamily: "'Switzer', sans-serif", margin: 0 }}
             >
               @2025
             </p>
 
-            {/* Center */}
-            <div className="flex gap-12">
-              <p 
-                className="text-black text-[16px] leading-[19px]"
-                style={{
-                  fontFamily: 'Silka, sans-serif',
-                }}
+            <div className="flex gap-20">
+              <a
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black text-[16px] leading-[19px] cursor-pointer hover:opacity-60 transition-opacity"
+                style={{ fontFamily: "'Switzer', sans-serif", textDecoration: "none" }}
               >
-                — Instagram —
-              </p>
-              <p 
-                className="text-black text-[16px] leading-[19px]"
-                style={{
-                  fontFamily: 'Silka, sans-serif',
-                }}
+                -&nbsp; Instagram &nbsp;-
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black text-[16px] leading-[19px] cursor-pointer hover:opacity-60 transition-opacity"
+                style={{ fontFamily: "'Switzer', sans-serif", textDecoration: "none" }}
               >
-                — LinkedIn —
-              </p>
+                -&nbsp; LinkedIn &nbsp;-
+              </a>
             </div>
 
-            {/* Right */}
-            <p 
-              className="text-black text-[16px] leading-[19px]"
-              style={{
-                fontFamily: 'Silka, sans-serif',
-              }}
+            <a
+              href="/legals"
+              className="text-black text-[16px] leading-[19px] cursor-pointer hover:opacity-60 transition-opacity"
+              style={{ fontFamily: "'Switzer', sans-serif", textDecoration: "none" }}
             >
               Legals
-            </p>
+            </a>
           </div>
+
         </div>
       </div>
 
-      {/* Group 75.png Image Section - Below White Section */}
+      {/* ── Group 75 horse image section ── */}
       <div className="relative w-full">
-        {/* Background Image */}
         <img
           src="/images/Group 75.png"
           alt="Footer Background"
           className="w-full h-auto object-cover"
         />
 
-        {/* Gradient Overlay */}
-        <div 
+        {/* Gradient overlay */}
+        <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 16.83%, rgba(88, 88, 88, 0.497596) 52.24%, rgba(44, 44, 44, 0.629461) 68.3%, rgba(34, 34, 34, 0.659135) 76.8%, rgba(22, 22, 22, 0.69655) 92.85%, rgba(12, 12, 12, 0.723844) 101.35%, rgba(4, 4, 4, 0.75) 115.05%)',
-            mixBlendMode: 'multiply',
+            background:
+              "linear-gradient(180deg, rgba(255,255,255,0) 16.83%, rgba(88,88,88,0.497596) 52.24%, rgba(44,44,44,0.629461) 68.3%, rgba(34,34,34,0.659135) 76.8%, rgba(22,22,22,0.69655) 92.85%, rgba(12,12,12,0.723844) 101.35%, rgba(4,4,4,0.75) 115.05%)",
+            mixBlendMode: "multiply",
           }}
         />
 
-        {/* Content Overlay on Image */}
-        <div className="absolute inset-0">
-          {/* Bottom Section - CTA Buttons + White Logo */}
-          <div className="absolute bottom-32 left-0 right-0 flex justify-between items-end px-[10%]">
-            {/* Left - CTA Buttons (NO BORDERS) */}
-            <div className="flex gap-8">
-              <button 
-                className="text-white text-[16px] leading-[19px] px-4 py-3"
+        {/* Bottom overlay — buttons left side, logo far right */}
+        <div
+          className="absolute inset-0 flex items-end"
+          style={{ paddingBottom: "48px" }}
+        >
+          <div
+            className="w-full flex flex-row items-end justify-between"
+            style={{
+              paddingLeft: "60px",
+              paddingRight: "60px",
+              boxSizing: "border-box",
+            }}
+          >
+            {/* Left — both buttons side by side */}
+            <div
+              className="flex flex-row items-end"
+              style={{ gap: "48px" }}
+            >
+              {/* OUR WORKS (DETAILED) */}
+              <button
+                className="text-white cursor-pointer hover:opacity-70 transition-opacity"
                 style={{
-                  fontFamily: 'Silka, sans-serif',
+                  fontFamily: "'Switzer', sans-serif",
+                  fontSize: "16px",
+                  lineHeight: "22px",
+                  textAlign: "left",
+                  background: "none",
+                  border: "none",
+                  padding: 0,
                 }}
               >
                 OUR WORKS<br />(DETAILED)
               </button>
-              <button 
-                className="text-white text-[16px] leading-[19px] px-4 py-2"
+
+              {/* LET'S DISCUSS — right beside OUR WORKS */}
+              <button
+                className="text-white cursor-pointer hover:opacity-70 transition-opacity"
                 style={{
-                  fontFamily: 'Silka, sans-serif',
+                  fontFamily: "'Switzer', sans-serif",
+                  fontSize: "16px",
+                  lineHeight: "22px",
+                  background: "none",
+                  border: "none",
+                  padding: 0,
+                  paddingBottom: "2px", /* align baseline with bottom of OUR WORKS (DETAILED) */
                 }}
               >
-                LET'S DISCUSS
+                LET&apos;S DISCUSS
               </button>
             </div>
 
-            {/* Right - White Gridism Icon */}
-            <div>
-              <img
-                src="/images/gridism-logo.svg"
-                alt="Gridism Icon"
-                className="w-[160px] h-[160px]"
-                style={{
-                  filter: 'brightness(0) invert(1)',
-                }}
-              />
-            </div>
+            {/* Right — Gridism logo, same bottom alignment as buttons */}
+            <img
+              src="/images/gridism-logo.svg"
+              alt="Gridism Icon"
+              style={{
+                width: "120px",
+                height: "120px",
+                filter: "brightness(0) invert(1)",
+                flexShrink: 0,
+              }}
+            />
           </div>
         </div>
       </div>

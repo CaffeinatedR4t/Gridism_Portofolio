@@ -1,44 +1,30 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useColorDetection } from "@/hooks/useColorDetection";
-
 const FloatingLogo = () => {
-  const [centerY, setCenterY] = useState(500); // Default fallback
-
-  useEffect(() => {
-    // Set actual center Y position after component mounts
-    setCenterY(window.innerHeight / 2);
-
-    const handleResize = () => {
-      setCenterY(window.innerHeight / 2);
-    };
-
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
-
-  // Detect background at floating logo position (center of viewport)
-  const isDark = useColorDetection(centerY);
-
   return (
     <div
       className="fixed z-30 pointer-events-none"
       style={{
+        /* Stick to the very left edge of screen */
         left: "0px",
         top: "50%",
         transform: "translateY(-50%) rotate(-90deg)",
         transformOrigin: "center center",
+        /* mix-blend-mode: difference — auto contrast on any bg */
+        mixBlendMode: "difference",
+        /* 80% opacity as requested */
+        opacity: 0.8,
       }}
     >
       <img
         src="/images/gridism-logo-tilted.svg"
         alt=""
-        className="select-none h-auto transition-all duration-200"
         aria-hidden="true"
+        className="select-none h-auto"
         style={{
           width: "124px",
-          filter: isDark ? "invert(1)" : "invert(0)",
+          /* always white — difference blend handles the inversion */
+          filter: "invert(1)",
         }}
       />
     </div>

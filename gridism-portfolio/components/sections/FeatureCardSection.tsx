@@ -15,99 +15,189 @@ interface FeatureCardProps {
   images: Image[];
   chessPiece: string;
   chessPieceSize: { width: number; height: number };
+  bgColor?: "white" | "black";
 }
 
-const FeatureCardSection = ({ 
-  number, 
-  title, 
-  subtitle, 
-  description, 
+const FeatureCardSection = ({
+  number,
+  title,
+  subtitle,
+  description,
   images,
   chessPiece,
   chessPieceSize,
+  bgColor = "white",
 }: FeatureCardProps) => {
+  const theme = bgColor === "black" ? "dark" : "light";
+  const sectionBg = bgColor === "black" ? "#000000" : "#FFFFFF";
+
   return (
-    <section 
-      className="relative w-full bg-white overflow-hidden"
-      data-theme="light"
-      style={{
-        paddingTop: '34px',
-        paddingBottom: '40px',
-      }}
+    <section
+      className="relative w-full"
+      data-theme={theme}
+      style={{ backgroundColor: sectionBg }}
     >
-      {/* Centered Container */}
-      <div className="max-w-[1440px] mx-auto">
-        {/* Black Info Box with Chess Piece */}
-        <div className="flex justify-center px-[6.67%]">
-          <div 
-            className="bg-black p-12 flex flex-col gap-12 relative min-h-fit"
+      {/* Outer wrapper — centers the 1300px black box */}
+      <div
+        style={{
+          paddingTop: "34px",
+          paddingBottom: "40px",
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        {/* Black box — 1300px, centered */}
+        <div
+          style={{
+            position: "relative",
+            width: "1300px",
+            backgroundColor: "#000000",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: "50px",
+            overflow: "visible",
+          }}
+        >
+          {/* Title row — height=92px */}
+          <div
             style={{
-              width: '1300px',
+              width: "1300px",
+              height: "92px",
+              display: "flex",
+              alignItems: "flex-end",
+              paddingLeft: "58px",
+              paddingRight: "59px",
+              boxSizing: "border-box",
             }}
           >
-            {/* Title */}
-            <h3 className="text-[40px] leading-[48px] text-white font-normal pl-[14.54%]">
+            <p
+              style={{
+                fontFamily: "'Switzer', sans-serif",
+                fontWeight: 400,
+                fontSize: "40px",
+                lineHeight: "53px",
+                color: "#FFFFFF",
+                margin: 0,
+              }}
+            >
               {title}
-            </h3>
+            </p>
+          </div>
 
-            {/* Info Row with Chess Piece Space */}
-            <div className="flex gap-6 pl-[55px] pr-[180px]">
-              {/* Number - NO BORDER */}
-              <div 
-                className="text-white text-[20px] leading-[24px] px-2 flex items-center justify-center flex-shrink-0"
+          {/* Info row — number, subtitle, description */}
+          <div
+            style={{
+              width: "1300px",
+              paddingLeft: "55px",
+              boxSizing: "border-box",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                gap: "25px",
+                width: "1245px",
+                paddingBottom: "50px",
+              }}
+            >
+              {/* Number — no border */}
+              <p
                 style={{
-                  width: '109px',
-                  height: '21px',
+                  flexShrink: 0,
+                  width: "109px",
+                  height: "21px",
+                  fontFamily: "'Switzer', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "20px",
+                  lineHeight: "26px",
+                  color: "#FFFFFF",
+                  margin: 0,
                 }}
               >
                 {number}
-              </div>
+              </p>
 
-              {/* Subtitle - NO BORDER */}
-              <div 
-                className="text-white text-[20px] leading-[24px] px-2 flex items-center justify-center flex-shrink-0"
+              {/* Subtitle — no border */}
+              <p
                 style={{
-                  width: '195px',
-                  height: '21px',
+                  flexShrink: 0,
+                  width: "195px",
+                  height: "21px",
+                  fontFamily: "'Switzer', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "20px",
+                  lineHeight: "26px",
+                  color: "#FFFFFF",
+                  margin: 0,
                 }}
               >
                 {subtitle}
-              </div>
+              </p>
 
-              {/* Description - Flexible width, won't collide with chess piece */}
-              <p 
-                className="text-white text-[20px] leading-[24px] text-justify flex-1"
+              {/* Description — capped so chess piece is visible */}
+              <p
+                style={{
+                  width: "600px",
+                  fontFamily: "'Switzer', sans-serif",
+                  fontWeight: 400,
+                  fontSize: "20px",
+                  lineHeight: "26px",
+                  textAlign: "justify",
+                  color: "#FFFFFF",
+                  margin: 0,
+                }}
               >
                 {description}
               </p>
             </div>
+          </div>
 
-            {/* Chess Piece - Middle Right (Absolute positioned outside flow) */}
-            <div 
-              className="absolute right-8 top-1/2 -translate-y-1/2"
+          {/* Chess piece — right side of black box */}
+          <div
+            style={{
+              position: "absolute",
+              right: "40px",
+              top: "50%",
+              transform: "translateY(-50%)",
+              width: `${chessPieceSize.width}px`,
+              height: `${chessPieceSize.height}px`,
+              zIndex: 20,
+            }}
+          >
+            <img
+              src={chessPiece}
+              alt="Chess Piece"
               style={{
-                width: `${chessPieceSize.width}px`,
-                height: `${chessPieceSize.height}px`,
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                display: "block",
               }}
-            >
-              <img
-                src={chessPiece}
-                alt="Chess Piece"
-                className="w-full h-full object-contain"
-              />
-            </div>
+            />
           </div>
         </div>
       </div>
 
-      {/* Image Gallery - Centered */}
-      <div className="max-w-[1440px] mx-auto">
-        <div className="flex gap-5 mt-16 px-[2.08%] overflow-x-auto">
-          {images.map((image, index) => (
-            <div 
-              key={index}
-              className="flex-none"
+      {/* Image gallery */}
+      <div style={{ backgroundColor: sectionBg, overflowX: "auto" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            gap: "20px",
+            paddingLeft: "30px",
+            paddingBottom: "40px",
+          }}
+        >
+          {images.map((image, i) => (
+            <div
+              key={i}
               style={{
+                flexShrink: 0,
                 width: `${image.width}px`,
                 height: `${image.height}px`,
               }}
@@ -115,7 +205,12 @@ const FeatureCardSection = ({
               <img
                 src={image.src}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  display: "block",
+                }}
               />
             </div>
           ))}

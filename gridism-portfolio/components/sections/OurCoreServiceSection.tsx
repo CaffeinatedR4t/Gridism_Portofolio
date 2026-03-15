@@ -3,93 +3,144 @@
 const OurCoreServiceSection = () => {
   const services = [
     {
-      title: "Web Design & Development",
+      label: "Web Design & Development",
       image: "/images/Artboard 1sssdwsdws.png",
-      width: 750,
+      titleLeft: 113,
+      titleWidth: 750,
+      imageTop: 120,
       imageWidth: 1303,
-      imageHeight: 977,
-      marginLeft: "110px",
+      imageHeight: 461,
+      blockHeight: 581,
     },
     {
-      title: "Branding & Visual Identity",
+      label: "Branding & Visual Identity",
       image: "/images/ezzrale 1 portos.png",
-      width: 800,
+      titleLeft: 388,
+      titleWidth: 800,
+      imageTop: 120,
       imageWidth: 1299,
-      imageHeight: 974,
-      marginLeft: "388px",
+      imageHeight: 461,
+      blockHeight: 581,
     },
     {
-      title: "Digital Transformation Consulting",
+      label: "Digital Transformation Consulting",
       image: "/images/gridism 2@2x.png",
-      width: 800,
+      titleLeft: 109,
+      titleWidth: 800,
+      imageTop: 240,
       imageWidth: 1300,
-      imageHeight: 977,
-      marginLeft: "113px",
+      imageHeight: 466,
+      blockHeight: 706,
     },
   ];
 
   return (
-    <section 
-      className="relative w-full bg-black py-24"
+    <section
+      className="relative w-full bg-black overflow-hidden"
       data-theme="dark"
     >
-      <div className="max-w-[1440px] mx-auto px-[4.8%]">
-        {/* OUR CORE SERVICE Heading (Icon + Text Combined PNG) */}
-        <div className="flex justify-center mb-16">
-          <img
-            src="/images/icon-our core service.png"
-            alt="Our Core Service"
-            className="w-auto"
-            style={{ maxWidth: '1049px' }}
-          />
-        </div>
+      <div className="relative mx-auto" style={{ maxWidth: "1440px" }}>
 
-        {/* Service Cards */}
-        <div className="space-y-24">
-          {services.map((service, index) => (
-            <div 
-              key={index}
-              className="flex flex-col items-start gap-8"
+        {/* Heading row */}
+        <div
+          className="relative"
+          style={{
+            marginLeft: "67px",
+            paddingTop: "60px",
+            paddingBottom: "40px",
+          }}
+        >
+          <div
+            className="relative"
+            style={{ width: "1049px", height: "94px", marginLeft: "-121px" }}
+          >
+            {/* "Our Core Service" text */}
+            <h2
+              className="absolute text-white"
               style={{
-                marginLeft: service.marginLeft,
+                fontFamily: "'Switzer', sans-serif",
+                fontWeight: 400,
+                fontSize: "96px",
+                lineHeight: "127px",
+                left: "122px",
+                top: "0px",
+                width: "1009px",
+                whiteSpace: "nowrap",
               }}
             >
-              {/* Service Title */}
-              <div 
-                className="bg-white flex items-center justify-center"
+              Our Core Service
+            </h2>
+
+            {/* Horse chess piece icon — Salinan Kuda png.png */}
+            <div
+              className="absolute"
+              style={{
+                left: "1155px",
+                top: "11px",
+                width: "47.74px",
+                height: "72px",
+              }}
+            >
+              <img
+                src="/images/Salinan Kuda png.png"
+                alt=""
+                aria-hidden="true"
+                className="w-full h-full object-contain"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Service blocks */}
+        <div
+          className="relative"
+          style={{ marginLeft: "67px", width: "1303px" }}
+        >
+          {services.map((service, i) => (
+            <div
+              key={i}
+              className="relative"
+              style={{ height: `${service.blockHeight}px` }}
+            >
+              {/* Title white box */}
+              <div
+                className="absolute bg-white flex items-center justify-center"
                 style={{
-                  width: `${service.width}px`,
-                  height: '120px',
+                  left: `${service.titleLeft}px`,
+                  top: i === 2 ? "120px" : "0px",
+                  width: `${service.titleWidth}px`,
+                  height: "120px",
                 }}
               >
-                <h3 className="text-[40px] font-normal text-black text-center leading-[48px]">
-                  {service.title}
-                </h3>
+                <p
+                  className="text-black text-center"
+                  style={{
+                    fontFamily: "'Switzer', sans-serif",
+                    fontWeight: 400,
+                    fontSize: "40px",
+                    lineHeight: "53px",
+                  }}
+                >
+                  {service.label}
+                </p>
               </div>
 
-              {/* Service Image */}
+              {/* Service image */}
               <img
                 src={service.image}
-                alt={service.title}
-                className="w-full h-auto"
+                alt={service.label}
+                className="absolute object-cover"
                 style={{
-                  maxWidth: `${service.imageWidth}px`,
+                  left: i === 1 ? "0px" : "-1px",
+                  top: `${service.imageTop}px`,
+                  width: `${service.imageWidth}px`,
+                  height: `${service.imageHeight}px`,
                 }}
               />
             </div>
           ))}
         </div>
       </div>
-
-      {/* Decorative Line */}
-      <div 
-        className="absolute left-[-227px] top-[1127px] w-[1571px] border-l border-white"
-        style={{
-          height: '16011px',
-          borderWidth: '1.5px',
-          boxShadow: '0px 4px 4px #000000',
-        }}
-      />
     </section>
   );
 };
