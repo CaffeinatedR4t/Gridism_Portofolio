@@ -30,7 +30,11 @@ const ConnectSection = () => {
         const formData = new FormData(form);
 
         // --- IMPORTANT: Paste your Web3Forms Access Key here ---
+<<<<<<< HEAD
         formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string);
+=======
+        formData.append("access_key", "b99ce09a-763c-4be9-9e91-3d9d8cb51178");
+>>>>>>> cccfe2f0e50efd0a3583d03f40175f8def404ae2
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
