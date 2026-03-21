@@ -13,8 +13,8 @@ const SectionWork = () => {
 
     return (
         <>
-        <section data-theme="light" className="bg-black">
-            <section className="max-w-[1440px] min-h-[100vh] flex justify-center items-center mx-auto">
+        <section className="bg-black">
+            <section className="max-w-[1440px] min-h-[100vh] flex justify-center items-center mx-auto text-white">
                 <div className="relative mt-[3rem] w-[80%] min-h-[500px]">
                     <div className="flex">
                         <img src="/images/Kuda.svg" alt="Horse Chess Piece" className="h-auto w-20" />
@@ -45,48 +45,6 @@ const SectionWork = () => {
                         </div>
                     </div>
                 ))}
-            </section>
-
-            <section className="flex justify-evenly items-center w-full max-w-[1440px] h-200 mx-auto text-white relative">
-                <h1 className="text-[1.75rem] tracking-[0.5em]">GRIDISM</h1>
-                <Image src="/images/gridisim-blur bgblack.png" alt="gridism logo" width={400} height={400}></Image>
-                <div className="grid text-center leading-loose text-[1rem] w-[15%] tracking-[0.2em] gap-20">
-                    <p>Web development & Branding Agency</p>
-                    <p>- Contact Us -</p>
-                </div>
-
-                <footer className="absolute bottom-0 flex border-t-1 w-full">
-                    <div className="flex justify-between w-[50%] p-3">
-                        <p>2025</p>
-                        <p>Instagram</p>
-                    </div>
-                    <div className="flex justify-between w-[50%] p-3">
-                        <p>LinkedIn</p>
-                        <p>Legals</p>
-                    </div>
-                </footer>
-            </section>
-
-            <section className="relative w-full h-[1536px] bg-white">
-                {/* 1. The Background Image - Fills everything */}
-                <div className="absolute inset-0 z-0" >
-                    <Image
-                        src="/images/footer works page.png" // Replace with your actual image path
-                        alt="Artistic Footer Image"
-                        fill
-                        priority
-                        className="w-full h-full object-cover object-[50%_17%]"
-                    />
-                </div>
-
-                <div className="flex w-full justify-between items-center absolute bottom-0 px-10 pb-5">
-                    <div className="flex gap-10 text-black">
-                    <p>OUR WORKS<br/>(DETAILED)</p>
-                    <p>LET'S DISCUSS</p>
-                    </div>
-
-                    <Image src="/images/gridism-logo.svg" alt="Gridism Logo" width={150} height={150}></Image>
-                </div>
             </section>
         </section>
         </>

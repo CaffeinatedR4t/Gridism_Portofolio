@@ -1,15 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { cn } from "@/utils/cn";
 
 const theme = {
     typography: {
-        fontBold: "font-medium text-xl",
-        fontLight: "font-light text-base",
-        fontLightBig: "font-light text-[64px]"
+        fontBold: "font-medium text-lg md:text-xl",
+        fontLight: "font-light text-sm md:text-base",
+        fontLightBig: "font-light text-5xl lg:text[64px] leading tight"
     },
     spacing: {
-        primarySpacing: "flex flex-col gap-8",
+        primarySpacing: "flex flex-col gap-4 md:gap-8",
         secondarySpacing: "flex flex-col gap-1",
         tertiarySpacing: "flex flex-col gap-3"
     },
@@ -29,12 +30,7 @@ const ConnectSection = () => {
         const form = event.currentTarget;
         const formData = new FormData(form);
 
-        // --- IMPORTANT: Paste your Web3Forms Access Key here ---
-<<<<<<< HEAD
         formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY as string);
-=======
-        formData.append("access_key", "b99ce09a-763c-4be9-9e91-3d9d8cb51178");
->>>>>>> cccfe2f0e50efd0a3583d03f40175f8def404ae2
 
         try {
             const response = await fetch("https://api.web3forms.com/submit", {
@@ -61,25 +57,25 @@ const ConnectSection = () => {
     };
 
     return (
-        <section className="min-h-screen bg-white w-full flex items-center justify-center py-16">
-            <div className="w-full max-w-[1440px] mx-auto px-[5%] flex flex-col-reverse md:grid md:grid-cols-2 gap-16 md:gap-24 items-stretch">
+        <section className="min-h-screen bg-white w-full flex items-center justify-center py-35">
+            <div className="w-full max-w-[1440px] mx-auto px-[5%] flex flex-col md:grid md:grid-cols-2 gap-16 md:gap-24 items-stretch">
                 
                 {/* Left Side: Address & Socials */}
-                <div className="flex flex-col justify-end w-full h-full gap-12 md:gap-16">
+                <div className="flex flex-col justify-end w-full h-full gap-8 md:gap-16">
                     <div className={theme.spacing.primarySpacing}>
                         <p className={theme.typography.fontBold}>Address</p>
-                        <p className={`max-w-[80%] md:max-w-[70%] ${theme.typography.fontLight}`}>
-                            Summit Tower, 17th Floor<br/>
-                            Jl. Jendral Sudirman No. 45<br/>
+                        <p className={cn(theme.typography.fontLight, "max-w-[70%] md:max-w-[60%] lg:max-w-[40%]")}>
+                            Summit Tower, 17th Floor
+                            Jl. Jendral Sudirman No. 45
                             SCBD, Jakarta 12190 Indonesia
                         </p>
-                        <div className={`flex gap-5 ${theme.typography.fontBold}`}>
+                        <div className={cn(theme.typography.fontBold, "flex gap-5")}>
                             <a href="https://instagram.com/gridism.co" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">Instagram</a>
                             <a href="https://id.linkedin.com/company/gridismco" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">LinkedIn</a>
                             <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="hover:opacity-60 transition-opacity">X</a>
                         </div>
                     </div>
-                    <h1 className={`text-5xl md:${theme.typography.fontLightBig}`}>
+                    <h1 className={`${theme.typography.fontLightBig}`}>
                         Let's Connect
                     </h1>
                 </div>
@@ -87,7 +83,7 @@ const ConnectSection = () => {
                 {/* Right Side: Form */}
                 <div className="w-full h-full">
                     {/* Add the onSubmit handler here */}
-                    <form onSubmit={handleSubmit} className={`${theme.spacing.primarySpacing} w-full h-full flex flex-col justify-between`}>
+                    <form onSubmit={handleSubmit} className={cn(theme.spacing.primarySpacing, "w-full h-full flex flex-col justify-between")}>
                         
                         <div className={`${theme.spacing.secondarySpacing}`}>
                             <label className={theme.typography.fontBold}>Name</label>

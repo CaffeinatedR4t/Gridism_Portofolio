@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+/* --- CUSTOM MARQUEE ANIMATIONS --- */
+@keyframes rawMarqueeLeft {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes rawMarqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+/* We create our own utility classes */
+.run-marquee-left {
+  animation: rawMarqueeLeft 25s linear infinite;
+}
+
+.run-marquee-right {
+  animation: rawMarqueeRight 25s linear infinite;
+}
+
 
 /* Silka Font - OTF format */
 @font-face {

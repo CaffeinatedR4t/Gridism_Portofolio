@@ -2,11 +2,23 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname()
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [isBlended, setIsBlended] = useState(false);
+  const [isBlended, setIsBlended] = useState(pathname != "/");
+
+
+  useEffect(() => {
+      if(pathname == "/") {
+        setIsBlended(window.scrollY > 30)
+      }
+      else {
+        setIsBlended(true)
+      }    
+  }, [pathname])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,14 +31,18 @@ const Navbar = () => {
         setIsVisible(false);
       }
       setLastScrollY(currentScrollY);
-
       // 2. Blend Mode Threshold (10px)
-      setIsBlended(currentScrollY > 10);
+      if(pathname == "/") {
+        setIsBlended(currentScrollY > 30)
+      }
+      else {
+        setIsBlended(true)
+      }    
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  }, [lastScrollY, pathname]);
 
   const navLinks = [
     { href: "/", label: "Home", italic: false },
@@ -43,7 +59,7 @@ const Navbar = () => {
         mixBlendMode: isBlended ? "difference" : "normal",
       }}
     >
-      <nav className="relative w-full max-w-[1440px] mx-auto px-[2%] py-6 flex items-center justify-between">
+      <nav className="relative w-full max-w-[1440px] mx-auto px-6 py-6 flex items-center justify-between">
         
         {/* Logo */}
         <Link href="/" className="relative z-50">
@@ -52,7 +68,7 @@ const Navbar = () => {
             alt="Gridism"
             width={100}
             height={100}
-            className="w-[100px] h-auto transition-all duration-300"
+            className="w-[150px] h-auto transition-all duration-300"
             style={{
               // When blended, it must be white (#FFFFFF) to work with "difference"
               // When normal (at top), it stays its original color (assuming black)
@@ -67,10 +83,10 @@ const Navbar = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`relative text-[14px] lg:text-[16px] leading-[20px] transition-colors duration-500 hover:opacity-70 group ${
+                className={`relative text-[14px] lg:text-[20px] leading-[20px] transition-colors duration-500 hover:opacity-70 group ${
                   link.italic ? "italic" : ""
                 }`}
-                style={{
+                style={{  
                   // Force white color when blended so it can invert against backgrounds
                   color: "#FFFFFF"
                 }}
@@ -78,7 +94,7 @@ const Navbar = () => {
                 {link.label}
                 <span
                   className="absolute left-1/2 bottom-0 w-0 h-[1.5px] transition-all duration-300 ease-out group-hover:w-full group-hover:left-0"
-                  style={{ backgroundColor: isBlended ? "#FFFFFF" : "#000000" }}
+                  style={{ backgroundColor: "#FFFFFF"}}
                 />
               </Link>
             </li>

@@ -1,4 +1,4 @@
-import ConnectSection from "@/components/sections/ConnectSection"
+import ConnectSection from "@/components/sections/connect/ConnectSection"
 
 export default function Home() {
     return(

@@ -1,13 +1,13 @@
-import HeroSection from "@/components/sections/HeroSection";
-import BrandTransitionSection from "@/components/sections/BrandTransitionSection";
-import PortfolioCarouselSection from "@/components/sections/PortfolioCarouselSection";
-import LogoStripSection from "@/components/sections/LogoStripSection";
-import OurCoreServiceSection from "@/components/sections/OurCoreServiceSection";
-import KeyFeaturesSection from "@/components/sections/KeyFeaturesSection";
-import FeatureCardsContainer from "@/components/sections/FeatureCardsContainer";
-import OurCoreProcessSection from "@/components/sections/OurCoreProcessSection";
-import OurMainClientsSection from "@/components/sections/OurMainClientsSection";
-import FooterSection from "@/components/sections/FooterSection";
+import HeroSection from "@/components/sections/home/HeroSection";
+import BrandTransitionSection from "@/components/sections/home/BrandTransitionSection";
+import PortfolioCarouselSection from "@/components/sections/home/PortfolioCarouselSection";
+import LogoStripSection from "@/components/sections/home/LogoStripSection";
+import OurCoreServiceSection from "@/components/sections/home/OurCoreServiceSection";
+import KeyFeaturesSection from "@/components/sections/home/KeyFeaturesSection";
+import FeatureCardsContainer from "@/components/sections/home/FeatureCardsContainer";
+import OurCoreProcessSection from "@/components/sections/home/OurCoreProcessSection";
+import OurMainClientsSection from "@/components/sections/home/OurMainClientsSection";
+import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <FeatureCardsContainer />
       <OurCoreProcessSection />
       <OurMainClientsSection />
-      <FooterSection />
+      <FooterSection footerImage="/images/Group 75.png" footerLogo="/images/gridism-logo - Copy.svg"/>
     </>
   );
 }
