@@ -4,6 +4,10 @@ import { cn } from "@/utils/cn";
 const theme = {
     typography: {
         fontHeader: "text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light text-black tracking-wider leading-relaxed"
+    },
+    spacing: {
+        fontRed: "flex flex-row justify-between",
+        flexCol: "flex flex-col"
     }
 }
 
@@ -18,6 +22,14 @@ const STRATEGY_GROUPS = [
     ["Creative Development", "Research & Development", "Front-end Development", "Back-end Development"]
 ];
 
+const MARQUEE_IMAGES = [
+    { src: "/images/image 5.webp", alt: "Image 1", width: 284 },
+    { src: "/images/image 6.webp", alt: "Image 2", width: 355 },
+    { src: "/images/image 7.webp", alt: "Image 3", width: 265 },
+    { src: "/images/image 9.webp", alt: "Image 4", width: 358 },
+    { src: "/images/gridisimd 1ddd.webp", alt: "Image 5", width: 357 },
+];
+
 const AboutSection = () => {
     // Shared class for the mission statement headers
     return (
@@ -30,7 +42,7 @@ const AboutSection = () => {
             </div>
 
             {/* DESCRIPTION SECTION */}
-            <div className="min-h-screen flex flex-col items-center justify-center">
+            <div className={cn(theme.spacing.flexCol, "min-h-screen items-center justify-center")}>
                 <div className="w-[90%] max-w-4xl flex flex-col items-center gap-10 text-center">
                     {/* Mapped Mission Headers */}
                     <h1 className="text-3xl md:text-4xl lg:text-[64px] font-light">BUILDING <span className="font-medium">ICONIC</span> BRANDS AND DIGITAL EXPERIENCES</h1>
@@ -54,7 +66,7 @@ const AboutSection = () => {
             </div>
 
             {/* STRATEGY & OVERLAY SECTION */}
-            <div className="relative overflow-hidden w-full min-h-screen my-30">
+            <div className="relative overflow-hidden w-full my-30">
                 <div className="flex flex-col gap-[8vw] text-black text-center">
 
                     <div className="flex flex-col gap-20">
@@ -99,7 +111,76 @@ const AboutSection = () => {
                 </div>
             </div>
 
-        </section>
+            {/* The main wrapper MUST have overflow-hidden and take full width */}
+            <div className={cn(theme.spacing.flexCol, "relative h-[355px] w-full overflow-hidden")}>
+
+                {/* The animated moving track */}
+                <div className="flex shrink-0 w-max run-marquee-left">
+
+                    {/* Block 1 (Original Images) */}
+                    <div className="flex shrink-0 gap-1 pr-1">
+                        {MARQUEE_IMAGES.map((img, index) => (
+                            <Image
+                                key={`img-orig-${index}`}
+                                src={img.src}
+                                alt={img.alt}
+                                width={img.width}
+                                height={355}
+                            />
+                        ))}
+                    </div>
+
+                    {/* Block 2 (The Clone Illusion) */}
+                    <div className="flex shrink-0 gap-1 pr-1">
+                        {MARQUEE_IMAGES.map((img, index) => (
+                            <Image
+                                key={`img-clone-${index}`}
+                                src={img.src}
+                                alt={img.alt}
+                                width={img.width}
+                                height={355}
+                            />
+                        ))}
+                    </div>
+                </div>
+                <div className={cn(theme.spacing.flexCol, "absolute p-5 text-[#E40000] h-[355px] w-full font-bold justify-between")}>
+                    <div className="flex flex-row flex-start justify-between">
+                        <p>GRIDISM</p><p>JKT</p><p>INTERNATIONAL</p>
+                    </div>
+                    <div className="">
+                        <div className={cn(theme.spacing.fontRed)}>
+                            <p>WHY</p><p>DO</p><p>ALL</p><p>AGENCIES</p><p>HAVE</p><p>THE</p><p>SAME</p><p>PATTERNS?</p>
+                        </div>
+
+                        <div className={cn(theme.spacing.fontRed)}>
+                            <p>BECAUSE</p><p>THEY</p><p>STICK</p><p>TO</p><p>OLD</p><p>DESIGN</p><p>SYSTEMS</p><p>AND</p><p>ARE</p><p>NOT</p><p>TRANSPARENT</p><p>ABOUT</p><p>THEIR</p><p>PROCESS</p>
+                        </div>
+
+                        <div className={cn(theme.spacing.fontRed)} s>
+                            <p>WE</p><p>DO</p><p>NOT</p><p>NEED</p><p>MEANINGLESS</p><p>PROCESSES,</p>
+                        </div>
+
+                        <p>BECAUSE EMBRACING RESULTS IS OUR POLICY AND REALISM.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={cn(theme.spacing.flexCol, "min-h-screen justify-evenly gap-20 mx-auto w-[80%]")}>
+                <div className={cn(theme.spacing.flexCol, "gap-5")}>
+                    <p>We started in the smallest space possible: a cramped dorm room, no desk, no proper setup, only the floor and a shared belief.</p>
+                    <p>Day after day, we moved from one cheap cafe to another, working on things that <span className="font-bold">felt uncertain, unclear, and far from guaranteed.</span>Time, energy, and faith were spent on outcomes we couldn't yet see</p>
+                    <p><span className="font-bold">There were moments of doubt exhaustion, and silence but never division.</span>The four of us come from different roles and backgrounds, yet we were aligne by one vision, to build something meaningful, not just something that survives</p>
+                </div>
+
+                <div className={cn(theme.spacing.flexCol, "gap-5")}>
+                    <p>In the middle of limitation, we learned a hard truth without foundation, no system can last. So we stopped everything. We chose focus, we refined how we worked, clarified what we stood for, and began laying down principles strong enough to carry us forward: trust, discipline, and direction.</p>
+                    <p className="font-bold">Slowly, chaos turned into structure. Uncertainty turned into intention.</p>
+                </div>
+            </div>
+
+
+
+        </section >
     );
 };
 
