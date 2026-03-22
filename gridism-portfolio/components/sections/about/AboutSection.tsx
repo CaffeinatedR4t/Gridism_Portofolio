@@ -30,6 +30,10 @@ const MARQUEE_IMAGES = [
     { src: "/images/gridisimd 1ddd.webp", alt: "Image 5", width: 357 },
 ];
 
+// const FOUNDERS = [
+//    { name: "Jeremy Joseph Pohar", position: "Founder & Chief Technology Officer (CTO)", desc: "Jeremy has over 7 years of experience in web development and technical problem-solving. He leads the technical development at Gridisim, focusing on building scalable, efficient, and high-performance digital solutions through clean and structured code.", src: ""
+// ]
+
 const AboutSection = () => {
     // Shared class for the mission statement headers
     return (
@@ -162,6 +166,14 @@ const AboutSection = () => {
 
                         <p>BECAUSE EMBRACING RESULTS IS OUR POLICY AND REALISM.</p>
                     </div>
+                </div>
+            </div>
+
+            <div className="min-h-screen bg-red-600 justify-center p-20 ">
+                <h3 className="text-xl md:text-4xl">Our team of skilled professionals specializes in personalized, high quality branding and website design solutions.</h3>
+
+                <div>
+
                 </div>
             </div>
 

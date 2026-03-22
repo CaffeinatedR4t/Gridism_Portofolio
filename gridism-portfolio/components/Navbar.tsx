@@ -59,7 +59,7 @@ const Navbar = () => {
         mixBlendMode: isBlended ? "difference" : "normal",
       }}
     >
-      <nav className="relative w-full max-w-[1440px] mx-auto px-15 py-6 flex items-center justify-between">
+      <nav className="relative w-full max-w-[1440px] mx-auto px-15 flex items-center justify-between">
         
         {/* Logo */}
         <Link href="/" className="relative z-50">
@@ -68,7 +68,7 @@ const Navbar = () => {
             alt="Gridism"
             width={100}
             height={100}
-            className="w-10 h-10 transition-all duration-300"
+            className="transition-all duration-300"
             style={{
               // When blended, it must be white (#FFFFFF) to work with "difference"
               // When normal (at top), it stays its original color (assuming black)

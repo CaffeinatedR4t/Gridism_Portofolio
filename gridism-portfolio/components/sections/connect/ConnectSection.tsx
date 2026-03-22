@@ -5,13 +5,13 @@ import { cn } from "@/utils/cn";
 
 const theme = {
     typography: {
-        fontBold: "font-medium text-lg md:text-xl",
+        fontBold: "font-medium text-md",
         fontLight: "font-light text-sm md:text-base",
         fontLightBig: "font-light text-5xl lg:text[64px] leading tight"
     },
     spacing: {
-        primarySpacing: "flex flex-col gap-4 md:gap-8",
-        secondarySpacing: "flex flex-col gap-1",
+        primarySpacing: "flex flex-col gap-2 md:gap-4",
+        secondarySpacing: "flex flex-col",
         tertiarySpacing: "flex flex-col gap-3"
     },
     input: {
@@ -57,8 +57,8 @@ const ConnectSection = () => {
     };
 
     return (
-        <section className="bg-white w-full flex items-center justify-center py-35">
-            <div className="w-full max-w-[1440px] mx-auto px-[5%] flex flex-col md:grid md:grid-cols-2 gap-16 md:gap-24 items-stretch">
+        <section className="bg-white w-full flex min-h-screen items-center justify-center">
+            <div className="w-full max-w-[1440px] mx-auto px-[5%] flex flex-col justify-center items-center md:grid md:grid-cols-2 md:place-items-center gap-16 md:gap-24">
                 
                 {/* Left Side: Address & Socials */}
                 <div className="flex flex-col justify-end w-full h-full gap-8 md:gap-16">
@@ -81,7 +81,7 @@ const ConnectSection = () => {
                 </div>
 
                 {/* Right Side: Form */}
-                <div className="w-full h-full">
+                <div className="w-full">
                     {/* Add the onSubmit handler here */}
                     <form onSubmit={handleSubmit} className={cn(theme.spacing.primarySpacing, "w-full h-full flex flex-col justify-between")}>
                         
@@ -135,7 +135,7 @@ const ConnectSection = () => {
                                 name="message"
                                 placeholder="How can I help?"
                                 required
-                                rows={4}
+                                rows={3}
                                 className={`${theme.input.inputStyle} resize-none`} 
                             />
                         </div>
