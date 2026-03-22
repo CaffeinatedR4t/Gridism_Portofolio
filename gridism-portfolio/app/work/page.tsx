@@ -1,11 +1,13 @@
-import FooterSection from "@/components/FooterSection";
-import SectionWork from "@/components/sections/work/SectionWork";
+import Footer from "@/components/FooterSection";
+import Projects from "@/components/sections/work/ProjectSectionWork";
+import Hero from "@/components/sections/work/HeroSectionWork"
 
 export default function Home() {
   return (
     <>
-    <SectionWork/>
-    <FooterSection footerImage="/images/footer works page.png" footerLogo="/images/gridism-logo.svg"/>
+    <Hero/>
+    <Projects/>
+    <Footer footerImage="/images/footer works page.png" footerLogo="/images/gridism-logo.svg"/>
     </>
   );
 }

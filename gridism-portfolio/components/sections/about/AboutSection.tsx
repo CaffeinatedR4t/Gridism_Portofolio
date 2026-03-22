@@ -55,7 +55,6 @@ const AboutSection = () => {
             </div>
 
             {/* STRATEGY & OVERLAY SECTION */}
-            {/* STRATEGY & OVERLAY SECTION */}
             <div className="relative overflow-hidden w-full h-auto my-50">
                 <div className="flex flex-col gap-[8vw] text-black text-center">
 

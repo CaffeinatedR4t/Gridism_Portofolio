@@ -20,12 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} min-h-screen w-full`} suppressHydrationWarning>
+      <body className={`${inter.className} min-h-screen`} suppressHydrationWarning>
         <SmoothScroll>
           <Navbar />
           <FloatingLogo />
           <FloatingJakartaTime />
-          <main className="w-full">{children}</main>
+          <main>{children}</main>
         </SmoothScroll>
       </body>
     </html>

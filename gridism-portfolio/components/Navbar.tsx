@@ -59,12 +59,12 @@ const Navbar = () => {
         mixBlendMode: isBlended ? "difference" : "normal",
       }}
     >
-      <nav className="relative w-full max-w-[1440px] mx-auto px-6 py-6 flex items-center justify-between">
+      <nav className="relative w-full max-w-[1440px] mx-auto px-6 py-2 flex items-center justify-between">
         
         {/* Logo */}
         <Link href="/" className="relative z-50">
           <img
-            src="/images/gridism-logo.svg"
+            src="/icon.svg"
             alt="Gridism"
             width={100}
             height={100}
@@ -83,7 +83,7 @@ const Navbar = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`relative text-[14px] lg:text-[20px] leading-[20px] transition-colors duration-500 hover:opacity-70 group ${
+                className={`relative text-[14px] lg:text-[16px] leading-[20px] transition-colors duration-500 hover:opacity-70 group ${
                   link.italic ? "italic" : ""
                 }`}
                 style={{  
