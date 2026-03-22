@@ -26,7 +26,7 @@ const AboutSection = () => {
             <div className="relative min-h-screen">
                 <div className="relative min-h-screen bg-yellow">
                 </div>
-                <Image src="/images/gridism-logo.svg" alt="gridism logo" width={400} height={400} className="absolute inset-0 m-auto" />
+                <Image src="icon.svg" alt="gridism logo" width={200} height={200} className="absolute inset-0 m-auto" />
             </div>
 
             {/* DESCRIPTION SECTION */}
@@ -46,20 +46,19 @@ const AboutSection = () => {
                     </p>
                 </div>
             </div>
-
             <div className="flex gap-30 p-10 bg-black items-center text-white">
-                <h3 className="text-base sm:text-sm md:text-lg lg:text-3xl xl:text-4xl font-semibold leading-normal">Outcomes Over Process.</h3>
-                <p className="text-base sm:text-sm md:text-md lg:text-2xl xl:text-3xl font-regular tracking-wider text-justify">
+                <h3 className="text-base sm:text-sm md:text-lg lg:text-2xl xl:text-3xl font-semibold leading-normal">Outcomes Over Process.</h3>
+                <p className="text-base sm:text-sm md:text-md lg:text-xl xl:text-2xl font-regular tracking-wider text-justify">
                     We help brands and products build premium experiences that deliver ROI through rapid prototyping (AI), sharp decision-making, and meticulous detail crafting from start to finish. My process is flexible—what remains consistent are the outcome, quality, and impact.
                 </p>
             </div>
 
             {/* STRATEGY & OVERLAY SECTION */}
-            <div className="relative overflow-hidden w-full h-auto my-50">
+            <div className="relative overflow-hidden w-full min-h-screen my-30">
                 <div className="flex flex-col gap-[8vw] text-black text-center">
 
-                    <div className="flex flex-col justify-center items-center gap-20">
-                        <h3 className="text-[48px] md:text-[96px] mb-10">IDEAS AND STRATEGY</h3>
+                    <div className="flex flex-col gap-20">
+                        <h3 className="text-[48px] md:text-[96px]">IDEAS AND STRATEGY</h3>
 
                         {/* Mapped Strategy Groups - The Infinite Marquee */}
                         {STRATEGY_GROUPS.map((group, groupIndex) => {
@@ -77,8 +76,8 @@ const AboutSection = () => {
                                         {/* Block 1 (Original) */}
                                         <div className="flex shrink-0 gap-20 px-10 items-center">
                                             {group.map((item, itemIndex) => (
-                                                <p key={`original-${itemIndex}`} className="text-2xl md:text-3xl font-light whitespace-nowrap">
-                                                    {item} <span className="text-gray-300 ml-10">•</span>
+                                                <p key={`original-${itemIndex}`} className="text-2xl md:text-3xl  font-light whitespace-nowrap">
+                                                    {item}
                                                 </p>
                                             ))}
                                         </div>
@@ -87,7 +86,7 @@ const AboutSection = () => {
                                         <div className="flex shrink-0 gap-20 px-10 items-center">
                                             {group.map((item, itemIndex) => (
                                                 <p key={`clone-${itemIndex}`} className="text-2xl md:text-3xl font-light whitespace-nowrap">
-                                                    {item} <span className="text-gray-300 ml-10">•</span>
+                                                    {item}
                                                 </p>
                                             ))}
                                         </div>

@@ -57,7 +57,7 @@ const ConnectSection = () => {
     };
 
     return (
-        <section className="min-h-screen bg-white w-full flex items-center justify-center py-35">
+        <section className="bg-white w-full flex items-center justify-center py-35">
             <div className="w-full max-w-[1440px] mx-auto px-[5%] flex flex-col md:grid md:grid-cols-2 gap-16 md:gap-24 items-stretch">
                 
                 {/* Left Side: Address & Socials */}
