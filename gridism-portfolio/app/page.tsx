@@ -1,5 +1,4 @@
 import HeroAndBrandSection from "@/components/sections/home/HeroAndBrandSection";
-import LogoStripSection from "@/components/sections/home/LogoStripSection";
 import OurCoreServiceSection from "@/components/sections/home/OurCoreServiceSection";
 import KeyFeaturesSection from "@/components/sections/home/KeyFeaturesSection";
 import FeatureCardsContainer from "@/components/sections/home/FeatureCardsContainer";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <>
       <HeroAndBrandSection />
-      <LogoStripSection />
       <OurCoreServiceSection />
       <KeyFeaturesSection />
       <FeatureCardsContainer />
