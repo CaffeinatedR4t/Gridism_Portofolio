@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
     <AboutSection/>
-    <FooterSection footerImage="/images/Group 75.png" footerLogo="/images/gridism-logo - Copy.svg"/>
+    <FooterSection footerImage="/images/Group 75.png" footerLogo="/images/gridism-logo - Copy.svg" footerFontColor="text-black" footerBorderColor="border-black"/>
     </>
   );
 }

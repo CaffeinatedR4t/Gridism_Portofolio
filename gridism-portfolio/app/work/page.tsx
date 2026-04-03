@@ -7,7 +7,7 @@ export default function Home() {
     <>
     <Hero/>
     <Projects/>
-    <Footer footerImage="/images/footer works page.png" footerLogo="/images/gridism-logo.svg"/>
+    <Footer footerImage="/images/footer works page.png" footerLogo="/images/gridisim-blur bgblack.png" footerBgColor="bg-black" footerFontColor="text-white" footerBorderColor="border-white"/>
     </>
   );
 }

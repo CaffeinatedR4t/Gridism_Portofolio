@@ -12,19 +12,22 @@ const theme = {
 interface footerProps {
   footerImage: string,
   footerLogo: string,
+  footerBgColor: string
+  footerFontColor: string
+  footerBorderColor: string
 }
 
-const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
+const FooterSection = ({ footerImage, footerLogo, footerBgColor, footerFontColor, footerBorderColor }: footerProps) => {
   return (
-    <section className="relative bg-white" data-theme="light">
+    <section className="relative" data-theme="black">
       {/* ── White upper footer ── */}
-      <div className="min-h-screen relative bg-white">
+      <div className={cn(footerBgColor,"min-h-screen relative")}>
         <div className="absolute inset-0 flex flex-col items-center justify-center">
 
           {/* Three-column logo row */}
-          <div className="flex flex-row items-center justify-center w-full h-auto mx-auto px-6">
+          <div className={cn(footerFontColor,"flex flex-row items-center justify-center w-full h-auto mx-auto px-6")}>
             <p
-              className="text-black text-[24px] tracking-[0.3em] flex-1 text-center"
+              className="text-[24px] tracking-[0.3em] flex-1 text-center"
               style={{ fontFamily: "'Switzer', sans-serif" }}
             >
               G R I D I S M
@@ -34,14 +37,14 @@ const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
 
             <div className="flex flex-col gap-20 items-center justify-center text-center flex-1">
               <p
-                className="text-black text-[24px] leading-[29px] w-[90%]"
+                className="text-[24px] leading-[29px] w-[90%]"
                 style={{ fontFamily: "'Switzer', sans-serif" }}
               >
                 Web Development & Branding Agency
               </p>
               <a
                 href="mailto:hello@gridism.com"
-                className="text-black text-[24px] leading-[29px] cursor-pointer hover:opacity-60 transition-opacity"
+                className="text-[24px] leading-[29px] cursor-pointer hover:opacity-60 transition-opacity"
                 style={{ fontFamily: "'Switzer', sans-serif", textDecoration: "none" }}
               >
                 —&nbsp; Contact Us &nbsp;—
@@ -50,9 +53,9 @@ const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
           </div>
 
           {/* Bottom bar */}
-          <div className="absolute bottom-0 flex justify-between items-center w-screen border-t-1 border-black py-[20px] px-[30px] box-border">
+          <div className={cn(footerBorderColor, footerFontColor ,"absolute bottom-0 flex justify-between items-center w-screen border-t-1 py-[20px] px-[30px] box-border")}>
             <p
-              className="text-black text-[16px] leading-[19px] m-0"
+              className="text-[16px] leading-[19px] m-0"
               style={{ fontFamily: "'Switzer', sans-serif" }}
             >
               @2025
@@ -63,7 +66,7 @@ const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={theme.typography.fontFooter}
+                className={cn(theme.typography.fontFooter, footerFontColor)}
               >
                 -&nbsp; Instagram &nbsp;-
               </a>
@@ -71,7 +74,7 @@ const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={theme.typography.fontFooter}
+                className={cn(theme.typography.fontFooter, footerFontColor)}
               >
                 -&nbsp; LinkedIn &nbsp;-
               </a>
@@ -79,7 +82,7 @@ const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
 
             <a
               href="/legals"
-              className={theme.typography.fontFooter}
+              className={cn(theme.typography.fontFooter, footerFontColor)}
             >
               Legals
             </a>
@@ -161,11 +164,11 @@ const FooterSection = ({ footerImage, footerLogo }: footerProps) => {
 
             {/* Right — Gridism logo, same bottom alignment as buttons */}
             <Image
-              src={footerLogo}
+              src={"/images/gridism-logo - Copy.png"}
               alt="Gridism Icon"
-              width={120}
-              height={120}
-              className="w-[120px] h-[120px] brightness-0 invert shrink-0"
+              width={50}
+              height={50}
+              className="w-[50px] h-[50px] brightness-0 invert shrink-0"
             />
           </div>
         </div>

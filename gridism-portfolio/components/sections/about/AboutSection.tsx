@@ -1,9 +1,11 @@
+import {TeamSlider} from "components/TeamSlider"
 import Image from "next/image";
 import { cn } from "@/utils/cn";
 
 const theme = {
     typography: {
         fontHeader: "text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light text-black tracking-wider leading-relaxed"
+
     },
     spacing: {
         fontRed: "flex flex-row justify-between",
@@ -31,7 +33,10 @@ const MARQUEE_IMAGES = [
 ];
 
 // const FOUNDERS = [
-//    { name: "Jeremy Joseph Pohar", position: "Founder & Chief Technology Officer (CTO)", desc: "Jeremy has over 7 years of experience in web development and technical problem-solving. He leads the technical development at Gridisim, focusing on building scalable, efficient, and high-performance digital solutions through clean and structured code.", src: ""
+//     { name: "Jeremy Joseph Pohar", position: "Founder & Chief Technology Officer (CTO)", desc: "Jeremy has over 7 years of experience in web development and technical problem-solving. He leads the technical development at Gridisim, focusing on building scalable, efficient, and high-performance digital solutions through clean and structured code.", src: "/images/jeremy foto profile.png", alt: "Founders Picture", width: 300, height: 400 },
+//     { name: "Heles Ofalius", position: "Founder & Chief Creative Officer (CCO)", desc: "Ofalius has over 8 years of experience in visual design and digital branding. He leads the creative direction at Gridisim, overseeing brand identity, visual systems, and digital experiences. His work focuses on clarity, aesthetics, and strategic storytelling across platforms.", src: "/images/heles foto profile.png", alt: "Founders Picture", width: 300, height: 400 },
+//     { name: "Jason Julius Then", position: "Co-Founder & Head of Engineering", desc: "Jason has more than 5 years of experience in website development and system implementation.At Gridisim, he focuses on execution, optimization, and maintaining development quality to ensure reliable and seamless digital products.", src: "/images/jay foto profile.png", alt: "Founders Picture", width: 300, height: 400 },
+//     { name: "Alexander Valentino Lion", position: "Co-Founder & Chief Marketing Officer (CMO)", desc: "Alex has over 5 years of experience in marketing strategy and business management. He leads growth, client acquisition, and brand positioning at Gridisim, ensuring sustainable operations and strong market presence.", src: "/images/alex foto profile.png", alt: "Founders Picture", width: 300, height: 400 },
 // ]
 
 const AboutSection = () => {
@@ -160,7 +165,7 @@ const AboutSection = () => {
                             <p>BECAUSE</p><p>THEY</p><p>STICK</p><p>TO</p><p>OLD</p><p>DESIGN</p><p>SYSTEMS</p><p>AND</p><p>ARE</p><p>NOT</p><p>TRANSPARENT</p><p>ABOUT</p><p>THEIR</p><p>PROCESS</p>
                         </div>
 
-                        <div className={cn(theme.spacing.fontRed)} s>
+                        <div className={cn(theme.spacing.fontRed)}>
                             <p>WE</p><p>DO</p><p>NOT</p><p>NEED</p><p>MEANINGLESS</p><p>PROCESSES,</p>
                         </div>
 
@@ -169,13 +174,7 @@ const AboutSection = () => {
                 </div>
             </div>
 
-            <div className="min-h-screen bg-red-600 justify-center p-20 ">
-                <h3 className="text-xl md:text-4xl">Our team of skilled professionals specializes in personalized, high quality branding and website design solutions.</h3>
-
-                <div>
-
-                </div>
-            </div>
+            <TeamSlider/>
 
             <div className={cn(theme.spacing.flexCol, "min-h-screen justify-evenly gap-20 mx-auto w-[80%]")}>
                 <div className={cn(theme.spacing.flexCol, "gap-5")}>
@@ -189,9 +188,6 @@ const AboutSection = () => {
                     <p className="font-bold">Slowly, chaos turned into structure. Uncertainty turned into intention.</p>
                 </div>
             </div>
-
-
-
         </section >
     );
 };

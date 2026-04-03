@@ -21,7 +21,7 @@ export default function Home() {
       <FeatureCardsContainer />
       <OurCoreProcessSection />
       <OurMainClientsSection />
-      <FooterSection footerImage="/images/Group 75.png" footerLogo="/images/gridism-logo - Copy.svg"/>
+      <FooterSection footerImage="/images/Group 75.png" footerLogo="/images/gridism-logo - Copy.svg" footerBgColor="bg-white" footerFontColor="text-black" footerBorderColor="border-black"/>
     </>
   );
 }

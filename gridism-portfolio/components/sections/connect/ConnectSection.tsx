@@ -7,7 +7,7 @@ const theme = {
     typography: {
         fontBold: "font-medium text-md",
         fontLight: "font-light text-sm md:text-base",
-        fontLightBig: "font-light text-5xl lg:text[64px] leading tight"
+        fontLightBig: "font-light text-5xl lg:text-[64px] leading tight"
     },
     spacing: {
         primarySpacing: "flex flex-col gap-2 md:gap-4",
