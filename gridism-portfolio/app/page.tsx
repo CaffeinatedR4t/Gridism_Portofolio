@@ -1,6 +1,4 @@
-import HeroSection from "@/components/sections/home/HeroSection";
-import BrandTransitionSection from "@/components/sections/home/BrandTransitionSection";
-import PortfolioCarouselSection from "@/components/sections/home/PortfolioCarouselSection";
+import HeroAndBrandSection from "@/components/sections/home/HeroAndBrandSection";
 import LogoStripSection from "@/components/sections/home/LogoStripSection";
 import OurCoreServiceSection from "@/components/sections/home/OurCoreServiceSection";
 import KeyFeaturesSection from "@/components/sections/home/KeyFeaturesSection";
@@ -12,9 +10,7 @@ import FooterSection from "@/components/FooterSection";
 export default function Home() {
   return (
     <>
-      <HeroSection />
-      <BrandTransitionSection />
-      <PortfolioCarouselSection />
+      <HeroAndBrandSection />
       <LogoStripSection />
       <OurCoreServiceSection />
       <KeyFeaturesSection />
