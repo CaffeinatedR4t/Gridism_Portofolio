@@ -1,6 +1,7 @@
-import {TeamSlider} from "components/TeamSlider"
+import {TeamSlider} from "@/components/TeamSlider"
 import Image from "next/image";
 import { cn } from "@/utils/cn";
+import GallerySection from "./GallerySection";
 
 const theme = {
     typography: {
@@ -175,6 +176,7 @@ const AboutSection = () => {
             </div>
 
             <TeamSlider/>
+            <GallerySection/>
 
             <div className={cn(theme.spacing.flexCol, "min-h-screen justify-evenly gap-20 mx-auto w-[80%]")}>
                 <div className={cn(theme.spacing.flexCol, "gap-5")}>
